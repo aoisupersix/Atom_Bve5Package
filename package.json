@@ -1,17 +1,16 @@
 {
   "name": "bve5-map",
   "main": "./lib/language-bve-map",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "BVE5.6マップファイル用シンタックスハイライト、スニペット(一部構文のみ)。\nSyntax highlighting, snippets for BVE TrainSimulator 5.6.",
   "keywords": [
-      "bve",
-      "BVE5.6"
+    "bve",
+    "BVE5.6"
   ],
   "repository": "https://github.com/atom/language-bve-map",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
