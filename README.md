@@ -1,6 +1,6 @@
 # language-bve-map package
 
-![syntax highlighting](https://github.com/aoisupersix/Atom_Bve5Package/images/syntax.png)
+![syntaxhighlighting](https://github.com/aoisupersix/Atom_Bve5Package/blob/master/images/syntax.png)
 
 This is Atom Package language-bve-map.
 
