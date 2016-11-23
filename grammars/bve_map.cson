@@ -4,21 +4,21 @@
 'patterns': [
   {
     'name': 'comment.bve-map'
-    'match': '.*((//|#).*)'
+    'match': '((//|#).*)'
     'captures':
         '1':
             'name': 'comment.line.bve-map'
   }
   {
     'name': 'distance.bve-map'
-    'match': '(\\d*;)'
+    'match': '(\\d*)\\s*;'
     'captures':
       '1':
         'name': 'entity.name.section.bve-map'
   }
   {
     'name': 'repeater.bve-map'
-    'match': '\\b(Repeater)\\[\'(.+)\'\\]'
+    'match': '(Repeater)\\s*\\[\\s*\'(.+)\'\\s*\\]'
     'captures':
       '1':
         'name': 'keyword.control.bve-map'
@@ -27,16 +27,12 @@
   }
   {
     'name': 'repeater.begin0.bve-map'
-    'match': '\.(Begin0?)\\(\\s*\'(.*)\'(.*)(\\s*\'(\.+)\'\\s*,)+\\s*\\);'
+    'match': '\.(Begin0?)\\s*\\((.*)\\);'
     'captures':
       '1':
         'name': 'entity.name.type.bve-map'
       '2':
-        'name': 'entity.name.tag.bve-map'
-      '3':
         'name': 'constant.numeric.bve-map'
-      '4':
-        'name': 'entity.name.tag.bve-map'
   }
   {
     'name': 'curve.bve-map'
@@ -51,6 +47,15 @@
     'captures':
       '1':
         'name': 'entity.name.type.bve-map'
+      '2':
+        'name': 'constant.numeric.bve-map'
+  }
+  {
+    'name': 'gauge.bve-map'
+    'match': '\.(Gauge)\\(\\s*(.*)\\s*\\);'
+    'captures':
+      '1':
+        'name': 'invalid.deprecated.bve-map'
       '2':
         'name': 'constant.numeric.bve-map'
   }
@@ -81,11 +86,13 @@
   }
   {
     'name': 'curve.begin.bve-map'
-    'match': '\.(Begin)\\(((\\d|.|\\s|,)+)\\);'
+    'match': '(Curve)\\s*\.(Begin)\\(((\\d|.|\\s|,)+)\\);'
     'captures':
       '1':
-        'name': 'entity.name.type.bve-map'
+        'name': 'keyword.control.bve-map'
       '2':
+        'name': 'entity.name.type.bve-map'
+      '3':
         'name': 'constant.numeric.bve-map'
   }
   {
@@ -125,7 +132,7 @@
     'match': '\\b(Track)\\[\'(\.+)\'\\]'
     'captures':
       '1':
-        'name': 'entity.type.bve-map'
+        'name': 'entity.name.type.bve-map'
       '2':
         'name': 'entity.name.tag.bve-map'
   }
@@ -260,6 +267,15 @@
         'name': 'constant.numeric.bve-map'
   }
   {
+    'name': 'section.BeginNew.bve-map'
+    'match': '\.(BeginNew)\\((.*)\\);'
+    'captures':
+      '1':
+        'name': 'entity.name.type.bve-map'
+      '2':
+        'name': 'constant.numeric.bve-map'
+  }
+  {
     'name': 'signal.bve-map'
     'match': '\\b(Signal)\.(SpeedLimit)\\((.*)\\);'
     'captures':
@@ -363,10 +379,19 @@
   }
   {
     'name': 'fog.bve-map'
-    'match': '\\b(Fog)'
+    'match': '(Fog)'
     'captures':
       '1':
         'name': 'keyword.control.bve-map'
+  }
+  {
+    'name': 'set.bve-map'
+    'match': '\.(Set)\\s*\\((.*)\\)'
+    'captures':
+      '1':
+        'name': 'invalid.deprecated.bve-map'
+      '2':
+        'name': 'constant.numeric.bve-map'
   }
   {
     'name': 'drawdistance.bve-map'
@@ -443,6 +468,13 @@
         'name': 'constant.numeric.bve-map'
   }
   {
+    'name': 'rollingNoise.bve-map'
+    'match': '\\b(RollingNoise)'
+    'captures':
+      '1':
+        'name': 'keyword.control.bve-map'
+  }
+  {
     'name': 'flangeNoise.bve-map'
     'match': '\\b(FlangeNoise)'
     'captures':
@@ -458,6 +490,55 @@
       '2':
         'name': 'entity.name.type.bve-map'
       '3':
+        'name': 'constant.numeric.bve-map'
+  }
+  {
+    'name': 'train.add.bve-map'
+    'match': '\\b(Train)\.(Add)\\((.*)\\);'
+    'captures':
+      '1':
+        'name': 'keyword.control.bve-map'
+      '2':
+        'name': 'entity.name.type.bve-map'
+      '3':
+        'name': 'constant.numeric.bve-map'
+  }
+  {
+    'name': 'train.bve-map'
+    'match': '\\b(Train)\\[\'(.*)\'\\]'
+    'captures':
+      '1':
+        'name': 'keyword.control.bve-map'
+      '2':
+        'name': 'entity.name.tag.bve-map'
+  }
+  {
+    'name': 'train.load.bve-map'
+    'match': '\\b(Train)\\[\'(.*)\'\\]\.(Load)\\(\'(.*)\'\\);'
+    'captures':
+      '1':
+        'name': 'keyword.control.bve-map'
+      '2':
+        'name': 'entity.name.tag.bve-map'
+      '3':
+        'name': 'entity.other.inherited-class.bve-map'
+  }
+  {
+    'name': 'train.enable.bve-map'
+    'match': '\.(Enable)\\(\'(.*)\'\\);'
+    'captures':
+      '1':
+        'name': 'entity.name.tag.bve-map'
+      '2':
+        'name': 'constant.numeric.bve-map'
+  }
+  {
+    'name': 'train.stop.bve-map'
+    'match': '\.(Stop)\\(\'(.*)\'\\);'
+    'captures':
+      '1':
+        'name': 'entity.name.tag.bve-map'
+      '2':
         'name': 'constant.numeric.bve-map'
   }
 ]

@@ -23,3 +23,6 @@
   'structure':
     'prefix': 'Structure'
     'body': 'Structure[\'${1:structureKey}\']${2:}'
+  'load':
+    'prefix': '.Load'
+    'body': '.Load('${1:filePath}');'
