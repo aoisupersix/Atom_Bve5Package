@@ -1,0 +1,18 @@
+{
+  "name": "bve5-map",
+  "main": "./lib/language-bve-map",
+  "version": "0.0.0",
+  "description": "Syntax highlighting, auto-complete for BVE TrainSimulator 5.6.",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "language-bve-map:toggle"
+  },
+  "repository": "https://github.com/atom/language-bve-map",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

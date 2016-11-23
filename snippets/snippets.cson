@@ -1,0 +1,25 @@
+'.bve-map':
+  'curve':
+    'prefix': 'curve'
+    'body': 'Curve'
+  'beginTransition':
+    'prefix': '.BeginTransition'
+    'body': '.BeginTransition();'
+  'track':
+    'prefix': 'Track'
+    'body': 'Track[\'${1:trackKey}\']${2:}'
+  'position':
+    'prefix': '.Position'
+    'body': '.Position(${1:x},${2:y});'
+  'repeater':
+    'prefix': 'Repeater'
+    'body': 'Repeater[\'${1:repeaterKey}\']${2:}'
+  'repeater.begin':
+    'prefix': '.Begin'
+    'body': '.Begin(\'${1:trackKey}\',${2:x},${3:y},${4:z},${5:rx},${6:ry},${7:rz},${8:tilt},${9:span},${10:interval},${11:structureKey});'
+  'repeater.begin0':
+    'prefix': '.Begin0'
+    'body': '.Begin0(\'${1:trackKey}\',${2:tilt},${3:span},${4:interval},${5:structureKey});'
+  'structure':
+    'prefix': 'Structure'
+    'body': 'Structure[\'${1:structureKey}\']${2:}'

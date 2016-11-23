@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle language-bve-map",
+        "command": "language-bve-map:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "language-bve-map",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "language-bve-map:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
