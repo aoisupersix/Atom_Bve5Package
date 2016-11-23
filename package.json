@@ -1,5 +1,5 @@
 {
-  "name": "bve5-map2",
+  "name": "bve5-map",
   "main": "./lib/language-bve-map",
   "version": "0.1.1",
   "description": "Syntax highlighting, auto-complete for BVE TrainSimulator 5.6.",
