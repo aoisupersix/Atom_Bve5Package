@@ -8,7 +8,7 @@
   "activationCommands": {
     "atom-workspace": "language-bve-map:toggle"
   },
-  "repository": "https://github.com/atom/language-bve-map",
+  "repository": "https://github.com/aoisupersix/Atom_Bve5Package",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
