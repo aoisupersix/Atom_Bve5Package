@@ -17,6 +17,28 @@
         'name': 'entity.name.section.bve-map'
   }
   {
+    'name': 'repeater.bve-map'
+    'match': '\\b(Repeater)\\[\'(.+)\'\\]'
+    'captures':
+      '1':
+        'name': 'keyword.control.bve-map'
+      '2':
+        'name': 'entity.name.tag.bve-map'
+  }
+  {
+    'name': 'repeater.begin0.bve-map'
+    'match': '\.(Begin0?)\\(\\s*\'(.*)\'(.*)(\\s*\'(\.+)\'\\s*,)+\\s*\\);'
+    'captures':
+      '1':
+        'name': 'entity.name.type.bve-map'
+      '2':
+        'name': 'entity.name.tag.bve-map'
+      '3':
+        'name': 'constant.numeric.bve-map'
+      '4':
+        'name': 'entity.name.tag.bve-map'
+  }
+  {
     'name': 'curve.bve-map'
     'match': '\\b(Curve)'
     'captures':
@@ -59,10 +81,10 @@
   }
   {
     'name': 'curve.begin.bve-map'
-    'match': '\.(Begin)\\((.*)\\);'
+    'match': '\.(Begin)\\(((\\d|.|\\s|,)+)\\);'
     'captures':
       '1':
-        'name': 'entity.type.bve-map'
+        'name': 'entity.name.type.bve-map'
       '2':
         'name': 'constant.numeric.bve-map'
   }
@@ -78,7 +100,7 @@
     'match': '\.(Interpolate)\\((.*)\\);'
     'captures':
       '1':
-        'name': 'entity.type.bve-map'
+        'name': 'entity.name.type.bve-map'
       '2':
         'name': 'constant.numeric.bve-map'
   }
@@ -105,7 +127,7 @@
       '1':
         'name': 'entity.type.bve-map'
       '2':
-        'name': 'entity.name.bve-map'
+        'name': 'entity.name.tag.bve-map'
   }
   {
     'name': 'track.xInterpolate.bve-map'
@@ -163,11 +185,11 @@
       '1':
         'name': 'keyword.control.bve-map'
       '2':
-        'name': 'entity.name.bve-map'
+        'name': 'entity.name.tag.bve-map'
       '3':
         'name': 'entity.name.type.bve-map'
       '4':
-        'name': 'entity.name.bve-map'
+        'name': 'entity.name.tag.bve-map'
       '5':
         'name': 'constant.numeric.bve-map'
   }
@@ -180,33 +202,11 @@
       '2':
         'name': 'entity.name.type.bve-map'
       '3':
-        'name': 'entity.name.bve-map'
+        'name': 'entity.name.tag.bve-map'
       '4':
-        'name': 'entity.name.bve-map'
+        'name': 'entity.name.tag.bve-map'
       '5':
         'name': 'constant.numeric.bve-map'
-  }
-  {
-    'name': 'repeater.bve-map'
-    'match': '\\b(Repeater)\\[\'(.+)\'\\]'
-    'captures':
-      '1':
-        'name': 'keyword.control.bve-map'
-      '2':
-        'name': 'entity.name.bve-map'
-  }
-  {
-    'name': 'repeater.begin0.bve-map'
-    'match': '\.(Begin0?)\\(\\s*\'(\.*)\'(.*)(\\s*,\\s*\'(\.+)\'\\s*)+\\);'
-    'captures':
-      '1':
-        'name': 'entity.name.type.bve-map'
-      '2':
-        'name': 'entity.name.bve-map'
-      '3':
-        'name': 'constant.numeric.bve-map'
-      '4':
-        'name': 'entity.name.bve-map'
   }
   {
     'name': 'background.change.bve-map'
@@ -217,7 +217,7 @@
       '2':
         'name': 'entity.name.type.bve-map'
       '3':
-        'name': 'entity.name.bve-map'
+        'name': 'entity.name.tag.bve-map'
   }
   {
     'name': 'station.load.bve-map'
@@ -237,7 +237,7 @@
       '1':
         'name': 'keyword.control.bve-map'
       '2':
-        'name': 'entity.name.bve-map'
+        'name': 'entity.name.tag.bve-map'
       '3':
         'name': 'entity.name.type.bve-map'
       '4':
@@ -288,13 +288,13 @@
       '1':
         'name': 'keyword.control.bve-map'
       '2':
-        'name': 'entity.name.bve-map'
+        'name': 'entity.name.tag.bve-map'
       '3':
         'name': 'entity.name.type.bve-map'
       '4':
         'name': 'constant.numeric.bve-map'
       '5':
-        'name': 'entity.name.bve-map'
+        'name': 'entity.name.tag.bve-map'
       '6':
         'name': 'constant.numeric.bve-map'
   }
@@ -414,7 +414,7 @@
       '1':
         'name': 'keyword.control.bve-map'
       '2':
-        'name': 'entity.name.bve-map'
+        'name': 'entity.name.tag.bve-map'
       '3':
         'name': 'entity.name.type.bve-map'
   }
@@ -436,7 +436,7 @@
       '1':
         'name': 'keyword.control.bve-map'
       '2':
-        'name': 'entity.name.bve-map'
+        'name': 'entity.name.tag.bve-map'
       '3':
         'name': 'entity.name.type.bve-map'
       '4':
