@@ -1,7 +1,7 @@
 {
   "name": "bve5-map",
   "main": "./lib/language-bve-map",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "BVE5.6マップファイル用シンタックスハイライト、スニペット(一部構文のみ)。\nSyntax highlighting, snippets for BVE TrainSimulator 5.6.",
   "keywords": [
     "bve",
