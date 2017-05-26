@@ -4,552 +4,552 @@
   'firstLineMatch': '^BveTs\\s*Map\\s*2.02'
   'patterns': [
     {
-      'name': 'comment.bve-map'
+      'name': 'comment.bve-map-2.02'
       'match': '((//|#).*)'
       'captures':
           '1':
-              'name': 'comment.line.bve-map'
+              'name': 'comment.line.bve-map-2.02'
     }
     {
-      'name': 'distance.bve-map'
+      'name': 'distance.bve-map-2.02'
       'match': '(\\d*)\\s*;'
       'captures':
         '1':
-          'name': 'entity.name.section.bve-map'
+          'name': 'entity.name.section.bve-map-2.02'
     }
     {
-      'name': 'include.bve-map'
+      'name': 'include.bve-map-2.02'
       'match': '(include)\\s*\'(.+)\'\\s*;'
       'captures':
           '1':
-              'name': 'keyword.control.bve-map'
+              'name': 'keyword.control.bve-map-2.02'
           '2':
-              'name': 'entity.other.inherited-class.bve-map'
+              'name': 'entity.other.inherited-class.bve-map-2.02'
     }
     {
-      'name': 'repeater.bve-map'
+      'name': 'repeater.bve-map-2.02'
       'match': '(Repeater)\\s*\\[\\s*\'(.+)\'\\s*\\]'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
         '2':
-          'name': 'entity.name.tag.bve-map'
+          'name': 'entity.name.tag.bve-map-2.02'
     }
     {
-      'name': 'repeater.begin0.bve-map'
+      'name': 'repeater.begin0.bve-map-2.02'
       'match': '\.(Begin0?)\\s*\\((.*)\\);'
       'captures':
         '1':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '2':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'curve.bve-map'
+      'name': 'curve.bve-map-2.02'
       'match': '\\b(Curve)'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
     }
     {
-      'name': 'curve.setGauge.bve-map'
+      'name': 'curve.setGauge.bve-map-2.02'
       'match': '\.(SetGauge)\\(\\s*(.*)\\s*\\);'
       'captures':
         '1':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '2':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'gauge.bve-map'
+      'name': 'gauge.bve-map-2.02'
       'match': '\.(Gauge)\\(\\s*(.*)\\s*\\);'
       'captures':
         '1':
-          'name': 'invalid.deprecated.bve-map'
+          'name': 'invalid.deprecated.bve-map-2.02'
         '2':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'curve.setCenter.bve-map'
+      'name': 'curve.setCenter.bve-map-2.02'
       'match': '\.(SetCenter)\\(\\s*(.*)\\s*\\);'
       'captures':
         '1':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '2':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'curve.setFunction.bve-map'
+      'name': 'curve.setFunction.bve-map-2.02'
       'match': '\.(SetFunction)\\(\\s*(\\d)\\s*\\);'
       'captures':
         '1':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '2':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'curve.beginTransition.bve-map'
+      'name': 'curve.beginTransition.bve-map-2.02'
       'match': '\.(BeginTransition)\\(\\);'
       'captures':
         '1':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
     }
     {
-      'name': 'curve.begin.bve-map'
+      'name': 'curve.begin.bve-map-2.02'
       'match': '(Curve)\\s*\.(Begin)\\(((\\d|.|\\s|,)+)\\);'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
         '2':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '3':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'curve.end.bve-map'
+      'name': 'curve.end.bve-map-2.02'
       'match': '\.(End)\\(\\);'
       'captures':
         '1':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
     }
     {
-      'name': 'curve.interpolate.bve-map'
+      'name': 'curve.interpolate.bve-map-2.02'
       'match': '\.(Interpolate)\\((.*)\\);'
       'captures':
         '1':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '2':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'curve.change.bve-map'
+      'name': 'curve.change.bve-map-2.02'
       'match': '\.(Change)\\((.*)\\);'
       'captures':
         '1':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '2':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'gradient.bve-map'
+      'name': 'gradient.bve-map-2.02'
       'match': '\\b(Gradient)'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
     }
     {
-      'name': 'track.bve-map'
+      'name': 'track.bve-map-2.02'
       'match': '\\b(Track)\\[\'(\.+)\'\\]'
       'captures':
         '1':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '2':
-          'name': 'entity.name.tag.bve-map'
+          'name': 'entity.name.tag.bve-map-2.02'
     }
     {
-      'name': 'track.xInterpolate.bve-map'
+      'name': 'track.xInterpolate.bve-map-2.02'
       'match': '\.(X)\.(Interpolate)\\((.*)\\);'
       'captures':
         '1':
-          'name': 'entity.type.bve-map'
+          'name': 'entity.type.bve-map-2.02'
         '2':
-          'name': 'entity.type.bve-map'
+          'name': 'entity.type.bve-map-2.02'
         '3':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'track.yInterpolate.bve-map'
+      'name': 'track.yInterpolate.bve-map-2.02'
       'match': '\.(Y)\.(Interpolate)\\((.*)\\);'
       'captures':
         '1':
-          'name': 'entity.type.bve-map'
+          'name': 'entity.type.bve-map-2.02'
         '2':
-          'name': 'entity.type.bve-map'
+          'name': 'entity.type.bve-map-2.02'
         '3':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'track.position.bve-map'
+      'name': 'track.position.bve-map-2.02'
       'match': '\.(Position)\\((.*)\\);'
       'captures':
         '1':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '2':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'track.cant.bve-map'
+      'name': 'track.cant.bve-map-2.02'
       'match': '\.(Cant)\.'
       'captures':
         '1':
-          'name': 'entity.type.bve-map'
+          'name': 'entity.type.bve-map-2.02'
     }
     {
-      'name': 'structure.load.bve-map'
+      'name': 'structure.load.bve-map-2.02'
       'match': '\\b(Structure)\.(Load)\\((.*)\\);'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
         '2':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '3':
-          'name': 'entity.other.inherited-class.bve-map'
+          'name': 'entity.other.inherited-class.bve-map-2.02'
     }
     {
-      'name': 'structure.put.bve-map'
+      'name': 'structure.put.bve-map-2.02'
       'match': '\\b(Structure)\\[\'(\.+)\'\\]\.(Put0?)\\(\\s*\'(\.*)\'(.*)\\);'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
         '2':
-          'name': 'entity.name.tag.bve-map'
+          'name': 'entity.name.tag.bve-map-2.02'
         '3':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '4':
-          'name': 'entity.name.tag.bve-map'
+          'name': 'entity.name.tag.bve-map-2.02'
         '5':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'structure.putBetWeen.bve-map'
+      'name': 'structure.putBetWeen.bve-map-2.02'
       'match': '\\b(Structure)\\[\'(.*)\'\\]\.(PutBetween)\\(\'(.*)\',\'(.*)\'(,(.*))?\\);'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
         '2':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '3':
-          'name': 'entity.name.tag.bve-map'
+          'name': 'entity.name.tag.bve-map-2.02'
         '4':
-          'name': 'entity.name.tag.bve-map'
+          'name': 'entity.name.tag.bve-map-2.02'
         '5':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'background.change.bve-map'
+      'name': 'background.change.bve-map-2.02'
       'match': '\\b(Background)\.(Change)\\((.+)\\);'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
         '2':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '3':
-          'name': 'entity.name.tag.bve-map'
+          'name': 'entity.name.tag.bve-map-2.02'
     }
     {
-      'name': 'station.load.bve-map'
+      'name': 'station.load.bve-map-2.02'
       'match': '\\b(Station)\.(Load)\\((.+)\\);'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
         '2':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '3':
-          'name': 'entity.other.inherited-class.bve-map'
+          'name': 'entity.other.inherited-class.bve-map-2.02'
     }
     {
-      'name': 'station.put.bve-map'
+      'name': 'station.put.bve-map-2.02'
       'match': '\\b(Station)\\[(.+)\\]\.(Put)\\((.*)\\);'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
         '2':
-          'name': 'entity.name.tag.bve-map'
+          'name': 'entity.name.tag.bve-map-2.02'
         '3':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '4':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'section.bve-map'
+      'name': 'section.bve-map-2.02'
       'match': '\\b(Section)'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
     }
     {
-      'name': 'section.setSpeedLimit.bve-map'
+      'name': 'section.setSpeedLimit.bve-map-2.02'
       'match': '\.(SetSpeedLimit)\\((.*)\\);'
       'captures':
         '1':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '2':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'section.BeginNew.bve-map'
+      'name': 'section.BeginNew.bve-map-2.02'
       'match': '\.(BeginNew)\\((.*)\\);'
       'captures':
         '1':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '2':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'signal.bve-map'
+      'name': 'signal.bve-map-2.02'
       'match': '\\b(Signal)\.(SpeedLimit)\\((.*)\\);'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
         '2':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '3':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'signal.load.bve-map'
+      'name': 'signal.load.bve-map-2.02'
       'match': '\\b(Signal)\.(Load)\\((.+)\\);'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
         '2':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '3':
-          'name': 'entity.other.inherited-class.bve-map'
+          'name': 'entity.other.inherited-class.bve-map-2.02'
     }
     {
-      'name': 'signal.put.bve-map'
+      'name': 'signal.put.bve-map-2.02'
       'match': '\\b(Signal)\\[\'(.*)\'\\]\.(Put)\\((.*),(.*),(.*)\\);'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
         '2':
-          'name': 'entity.name.tag.bve-map'
+          'name': 'entity.name.tag.bve-map-2.02'
         '3':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '4':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
         '5':
-          'name': 'entity.name.tag.bve-map'
+          'name': 'entity.name.tag.bve-map-2.02'
         '6':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'beacon.put.bve-map'
+      'name': 'beacon.put.bve-map-2.02'
       'match': '\\b(Beacon)\.(Put)\\((.*)\\);'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
         '2':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '3':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'speedLimit.bve-map'
+      'name': 'speedLimit.bve-map-2.02'
       'match': '\\b(SpeedLimit)'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
     }
     {
-      'name': 'pretrain.pass.bve-map'
+      'name': 'pretrain.pass.bve-map-2.02'
       'match': '\\b(PreTrain)\.(Pass)\\((.*)\\);'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
         '2':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '3':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'light.bve-map'
+      'name': 'light.bve-map-2.02'
       'match': '\\b(Light)'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
     }
     {
-      'name': 'light.ambient.bve-map'
+      'name': 'light.ambient.bve-map-2.02'
       'match': '\.(Ambient)\\((.*)\\);'
       'captures':
         '1':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '2':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'light.diffuse.bve-map'
+      'name': 'light.diffuse.bve-map-2.02'
       'match': '\.(Diffuse)\\((.*)\\);'
       'captures':
         '1':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '2':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'light.direction.bve-map'
+      'name': 'light.direction.bve-map-2.02'
       'match': '\.(Direction)\\((.*)\\);'
       'captures':
         '1':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '2':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'fog.bve-map'
+      'name': 'fog.bve-map-2.02'
       'match': '(Fog)'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
     }
     {
-      'name': 'set.bve-map'
+      'name': 'set.bve-map-2.02'
       'match': '\.(Set)\\s*\\((.*)\\)'
       'captures':
         '1':
-          'name': 'invalid.deprecated.bve-map'
+          'name': 'invalid.deprecated.bve-map-2.02'
         '2':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'drawdistance.bve-map'
+      'name': 'drawdistance.bve-map-2.02'
       'match': '\\b(DrawDistance)'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
     }
     {
-      'name': 'cabIlluminance.bve-map'
+      'name': 'cabIlluminance.bve-map-2.02'
       'match': '\\b(CabIlluminance)'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
     }
     {
-      'name': 'irregularity.bve-map'
+      'name': 'irregularity.bve-map-2.02'
       'match': '\\b(Irregularity)'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
     }
     {
-      'name': 'adhesion.bve-map'
+      'name': 'adhesion.bve-map-2.02'
       'match': '\\b(Adhesion)'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
     }
     {
-      'name': 'sound.load.bve-map'
+      'name': 'sound.load.bve-map-2.02'
       'match': '\\b(Sound)\.(Load)\\((.+)\\);'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
         '2':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '3':
-          'name': 'entity.other.inherited-class.bve-map'
+          'name': 'entity.other.inherited-class.bve-map-2.02'
     }
     {
-      'name': 'sound.play.bve-map'
+      'name': 'sound.play.bve-map-2.02'
       'match': '\\b(Sound)\\[\'(.+)\'\\]\.(Play)\\(\\);'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
         '2':
-          'name': 'entity.name.tag.bve-map'
+          'name': 'entity.name.tag.bve-map-2.02'
         '3':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
     }
     {
-      'name': 'sound3d.load.bve-map'
+      'name': 'sound3d.load.bve-map-2.02'
       'match': '\\b(Sound3D)\.(Load)\\((.+)\\);'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
         '2':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '3':
-          'name': 'entity.other.inherited-class.bve-map'
+          'name': 'entity.other.inherited-class.bve-map-2.02'
     }
     {
-      'name': 'sound3d.put.bve-map'
+      'name': 'sound3d.put.bve-map-2.02'
       'match': '\\b(Sound3D)\\[\'(.+)\'\\]\.(Put)\\((.*)\\);'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
         '2':
-          'name': 'entity.name.tag.bve-map'
+          'name': 'entity.name.tag.bve-map-2.02'
         '3':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '4':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'rollingNoise.bve-map'
+      'name': 'rollingNoise.bve-map-2.02'
       'match': '\\b(RollingNoise)'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
     }
     {
-      'name': 'flangeNoise.bve-map'
+      'name': 'flangeNoise.bve-map-2.02'
       'match': '\\b(FlangeNoise)'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
     }
     {
-      'name': 'jointNoise.play.bve-map'
+      'name': 'jointNoise.play.bve-map-2.02'
       'match': '\\b(JointNoise)\.(Play)\\((.*)\\);'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
         '2':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '3':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'train.add.bve-map'
+      'name': 'train.add.bve-map-2.02'
       'match': '\\b(Train)\.(Add)\\((.*)\\);'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
         '2':
-          'name': 'entity.name.type.bve-map'
+          'name': 'entity.name.type.bve-map-2.02'
         '3':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'train.bve-map'
+      'name': 'train.bve-map-2.02'
       'match': '\\b(Train)\\[\'(.*)\'\\]'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
         '2':
-          'name': 'entity.name.tag.bve-map'
+          'name': 'entity.name.tag.bve-map-2.02'
     }
     {
-      'name': 'train.load.bve-map'
+      'name': 'train.load.bve-map-2.02'
       'match': '\\b(Train)\\[\'(.*)\'\\]\.(Load)\\(\'(.*)\'\\);'
       'captures':
         '1':
-          'name': 'keyword.control.bve-map'
+          'name': 'keyword.control.bve-map-2.02'
         '2':
-          'name': 'entity.name.tag.bve-map'
+          'name': 'entity.name.tag.bve-map-2.02'
         '3':
-          'name': 'entity.other.inherited-class.bve-map'
+          'name': 'entity.other.inherited-class.bve-map-2.02'
     }
     {
-      'name': 'train.enable.bve-map'
+      'name': 'train.enable.bve-map-2.02'
       'match': '\.(Enable)\\(\'(.*)\'\\);'
       'captures':
         '1':
-          'name': 'entity.name.tag.bve-map'
+          'name': 'entity.name.tag.bve-map-2.02'
         '2':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
     {
-      'name': 'train.stop.bve-map'
+      'name': 'train.stop.bve-map-2.02'
       'match': '\.(Stop)\\(\'(.*)\'\\);'
       'captures':
         '1':
-          'name': 'entity.name.tag.bve-map'
+          'name': 'entity.name.tag.bve-map-2.02'
         '2':
-          'name': 'constant.numeric.bve-map'
+          'name': 'constant.numeric.bve-map-2.02'
     }
   ]
 }
