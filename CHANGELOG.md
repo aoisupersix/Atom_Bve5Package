@@ -9,3 +9,9 @@
 ## 0.2.0 - Add new construction
   Add syntax grammar and snippets
   Add README.md
+## 0.2.1 - Bug Fix
+  Fix snippets code
+## 1.0.0 - Add Support files & Fine improvement
+  Add new support files
+  Add automatic judgment of grammar
+  Change package name and README.md

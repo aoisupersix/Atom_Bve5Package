@@ -7,7 +7,7 @@
     "bve",
     "BVE5.7"
   ],
-  "repository": "https://github.com/atom/language-bve5-syntax_snippets",
+  "repository": "https://github.com/aoisupersix/Atom_Bve5Package",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
