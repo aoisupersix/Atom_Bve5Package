@@ -1,13 +1,13 @@
 {
-  "name": "bve5-Syntax&Snippets",
-  "main": "./lib/language-bve-syntax&snippets",
+  "name": "bve5-Syntax_Snippets",
+  "main": "./lib/language-bve",
   "version": "0.2.1",
-  "description": "BVE5.7用シンタックスハイライト、スニペット(一部構文のみ)。\nSyntax highlighting, snippets for BVE TrainSimulator 5.7.",
+  "description": "BVE5.7の構文にシンタックスハイライト、スニペット(一部構文のみ)を行います。\nSyntax highlighting, snippets for BVE TrainSimulator 5.7.",
   "keywords": [
     "bve",
-    "BVE5.6"
+    "BVE5.7"
   ],
-  "repository": "https://github.com/atom/language-bve-map",
+  "repository": "https://github.com/atom/language-bve5-syntax_snippets",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
