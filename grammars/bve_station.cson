@@ -1,0 +1,51 @@
+{
+  'scopeName': 'source.bve-station'
+  'name': 'BveTs-StationList'
+  'patterns': [
+    {
+      'name': 'header.bve-station'
+      'match': '(BveTs\\s*Station\\s*List.*)'
+      'captures':
+          '1':
+              'name': 'keyword.other.bve-station'
+    }
+    {
+      'name': 'comment.bve-station'
+      'match': '((//|#).*)'
+      'captures':
+          '1':
+              'name': 'comment.line.bve-station'
+    }
+    {
+      'name': 'station.bve-station'
+      'match': '^([^,]+),([^,]+),([^,]*),([^,]*),([^,]*),([^,]*),([^,]*),([^,]*),([^,]*),([^,]*),([^,]*),([^,]*),([^,]*)'
+      'captures':
+          '1':
+              'name': 'constant.other.bve-station'
+          '2':
+              'name': 'entity.name.section.bve-station'
+          '3':
+              'name': 'constant.numeric.bve-station'
+          '4':
+              'name': 'constant.numeric.bve-station'
+          '5':
+              'name': 'constant.numeric.bve-station'
+          '6':
+              'name': 'constant.numeric.bve-station'
+          '7':
+              'name': 'constant.numeric.bve-station'
+          '8':
+              'name': 'constant.numeric.bve-station'
+          '9':
+              'name': 'constant.numeric.bve-station'
+          '10':
+              'name': 'variable.other.bve-station'
+          '11':
+              'name': 'variable.other.bve-station'
+          '12':
+              'name': 'constant.numeric.bve-station'
+          '13':
+              'name': 'constant.numeric.bve-station'
+    }
+  ]
+}

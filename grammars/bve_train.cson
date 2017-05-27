@@ -1,0 +1,45 @@
+{
+  'scopeName': 'source.bve-train'
+  'name': 'BveTs-Train'
+  'patterns': [
+    {
+      'name': 'header.bve-train'
+      'match': '(BveTs\\s*Train.*)'
+      'captures':
+          '1':
+              'name': 'keyword.other.bve-train'
+    }
+    {
+      'name': 'comment.bve-train'
+      'match': '((//|#).*)'
+      'captures':
+          '1':
+              'name': 'comment.line.bve-train'
+    }
+    {
+      'name': 'key.bve-train'
+      'match': '(\\w+)\\s*(=)(.*)'
+      'captures':
+          '1':
+              'name': 'constant.language.bve-train'
+          '2':
+              'name': 'keyword.operator.bve-train'
+          '3':
+              'name': 'constant.numeric.bve-train'
+    }
+    {
+      'name': 'structureSection.bve-train'
+      'match': '(\[\\s*Structure\\s*\])'
+      'captures':
+          '1':
+              'name': 'entity.name.section.bve-train'
+    }
+    {
+      'name': 'sound3dSection.bve-train'
+      'match': '(\[\\s*Sound3d\\s*\])'
+      'captures':
+          '1':
+              'name': 'entity.name.section.bve-train'
+    }
+  ]
+}
