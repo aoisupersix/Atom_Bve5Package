@@ -1,8 +1,8 @@
 {
-  "name": "bve5-map",
-  "main": "./lib/language-bve-map",
+  "name": "bve5-Syntax&Snippets",
+  "main": "./lib/language-bve-syntax&snippets",
   "version": "0.2.1",
-  "description": "BVE5.6マップファイル用シンタックスハイライト、スニペット(一部構文のみ)。\nSyntax highlighting, snippets for BVE TrainSimulator 5.6.",
+  "description": "BVE5.7用シンタックスハイライト、スニペット(一部構文のみ)。\nSyntax highlighting, snippets for BVE TrainSimulator 5.7.",
   "keywords": [
     "bve",
     "BVE5.6"
