@@ -12,12 +12,10 @@
 
 以下のファイル形式に対応しています。（括弧内は各ファイルのヘッダ）
 
-- シナリオ(BveTs Scenario 2.00)
 - マップ(BveTs Map 2.02)
 - ストラクチャーリスト(BveTs Structure List 2.00)
 - サウンドリスト(BveTs  Sound List 2.00)
 - 停車場リスト(BveTs Station List 2.00)
-- 信号現示リスト(BveTs Signal Aspects List 2.00)
 - 他列車(BveTs Train 1.01)
 
 ## サポート
