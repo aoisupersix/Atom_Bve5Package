@@ -1,6 +1,6 @@
 # BVE5用シンタックスハイライト&スニペット for Atom
 
-![syntaxhighlighting](https://github.com/aoisupersix/Atom_Bve5Package/blob/master/images/syntax.png)
+![syntaxhighlighting](images\syntax.png)
 
 ## これは何？
 
