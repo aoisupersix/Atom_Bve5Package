@@ -4,7 +4,7 @@
   'patterns': [
     {
       'name': 'header.bve-map-2.02'
-      'match': '(BveTs\\s*Map\\s*2.02)'
+      'match': '([B|b]ve[T|t]s\\s*[M|m]ap\\s*2.02)'
       'captures':
           '1':
               'name': 'keyword.other.bve-map-2.02'

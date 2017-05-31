@@ -4,7 +4,7 @@
   'patterns': [
     {
       'name': 'header.bve-structure'
-      'match': '(BveTs\\s*Structure\\s*List.*)'
+      'match': '([B|b]veTs\\s*[S|s]tructure\\s*[L|l]ist.*)'
       'captures':
           '1':
               'name': 'keyword.other.bve-structure'
