@@ -15,3 +15,9 @@
   Add new support files
   Add automatic judgment of grammar
   Change package name and README.md
+## 1.0.1 - Bug Fix
+  Add missing files
+## 1.1.0 - Fine improvement
+  Improvement header automatic judgment
+  Update header regular expression
+  Change package name to 'language-bve5' from 'bve5-Syntax_Snippets'
