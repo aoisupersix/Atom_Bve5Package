@@ -1,0 +1,18 @@
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Language Bve'
+      'submenu': [
+        {
+          'label': 'Judge Grammar'
+          'command': 'language-bve:GrammarJudgment'
+        },
+        {
+          'label': 'Jump Station'
+          'command': 'language-bve:JumpStation'
+        }
+      ]
+    ]
+  }
+]
