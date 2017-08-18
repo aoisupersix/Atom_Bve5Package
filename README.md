@@ -1,4 +1,5 @@
-# BVE5用シンタックスハイライト&スニペット for Atom
+# **language-bve5**
+####   BVE5.7用構文パッケージ
 
 ![syntaxhighlighting](images/syntax.png)
 
