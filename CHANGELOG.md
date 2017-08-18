@@ -21,3 +21,5 @@
   Improvement header automatic judgment
   Update header regular expression
   Change package name to 'language-bve5' from 'bve5-Syntax_Snippets'
+## 1.2.0 - Add new function
+  Add station name jump function
