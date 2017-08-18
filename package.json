@@ -7,6 +7,10 @@
     "bve",
     "BVE5.7"
   ],
+  "activationEvents": [
+    "language-bve:GrammarJudgment",
+    "language-bve:JumpStation"
+  ],
   "repository": "https://github.com/aoisupersix/Atom_Bve5Package",
   "license": "MIT",
   "engines": {
