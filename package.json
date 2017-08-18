@@ -2,7 +2,7 @@
   "name": "language-bve5",
   "main": "./lib/language-bve",
   "version": "1.2.0",
-  "description": "BVE5構文のシンタックスハイライト、スニペットの挿入(一部構文のみ)をサポートします。\nSyntax highlighting, snippets for BVE TrainSimulator 5.",
+  "description": "BveTrainsim5構文のシンタックスハイライト、スニペットの挿入、その他制作にやつ脱機能をサポートします。\nSyntax highlighting, snippets, and so on for BVE TrainSimulator 5.",
   "keywords": [
     "bve",
     "BVE5.7"

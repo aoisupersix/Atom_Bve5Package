@@ -1,11 +1,11 @@
 # **language-bve5**
-####   BVE5.7用構文パッケージ in Atom
+####   BveTrainsim5.7用構文パッケージ in Atom
 
 ![syntaxhighlighting](https://raw.githubusercontent.com/aoisupersix/Atom_Bve5Package/master/images/syntax.png)
 
 ## これは何？
 
-AtomでBVE5.7構文のシンタックスハイライト、スニペット挿入、その他制作に役立つ機能をサポートするパッケージです。  
+AtomでBveTrainsim5.7構文のシンタックスハイライト、スニペット挿入、その他制作に役立つ機能をサポートするパッケージです。  
 BVE5.7以前の構文にも一部対応しています。
 
 ## シンタックスハイライト対応ファイル一覧
@@ -27,7 +27,7 @@ BVE5.7以前の構文にも一部対応しています。
 
 ![grammarJudgement](https://raw.githubusercontent.com/aoisupersix/Atom_Bve5Package/master/images/grammarJudgement.gif)
 
-文法の判定を行うには、コマンドパレットから```Language Bve:GrammarJudgement```コマンドを実行してください。
+文法の判定を行うには、コマンドパレットの```Language Bve:GrammarJudgement```を選択するか、メニューバーの```Packages```→```Language Bve```→```Judge Grammar```を選択してコマンドを実行してください。
 
 自動で文法が判定されない場合、右下の```Plain Text```をクリックして、手動で文法を指定してください。
 
