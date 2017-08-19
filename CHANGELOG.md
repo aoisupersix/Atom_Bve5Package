@@ -26,3 +26,8 @@
 ## 1.2.1 - Improve performance
   Change list view instantiation to lazy load
   Add Menu Items
+## 1.2.2 - Bug Fix
+  Correnction of wrong sentences in Readme.md
+## 1.2.3 - Fine improvement
+  Change images in Readme.md
+  Update snippets
