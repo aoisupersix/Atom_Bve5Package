@@ -25,7 +25,7 @@ BveTrainsim5.7以前の構文にも一部対応しています。
 文法を有効化することによってパッケージの機能が利用できるようになります。  
 文法の判定は、読み込み/編集/保存時に各ファイルのヘッダから自動で行われますが、コマンドからも実行できます。
 
-![grammarJudgement](https://raw.githubusercontent.com/aoisupersix/Atom_Bve5Package/master/images/grammarJudgement.gif)
+![grammarJudgement](https://raw.githubusercontent.com/aoisupersix/Atom_Bve5Package/master/images/grammarJudgment.gif)
 
 文法の判定を行うには、コマンドパレットの```Language Bve:GrammarJudgement```を選択するか、メニューバーの```Packages```→```Language Bve```→```Judge Grammar```を選択してコマンドを実行してください。
 
