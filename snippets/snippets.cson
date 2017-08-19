@@ -2,6 +2,9 @@
   'curve':
     'prefix': 'curve'
     'body': 'Curve'
+  'setCenter':
+    'prefix': '.SetCenter'
+    'body': '.SetCenter(${1:x});${2:}'
   'beginTransition':
     'prefix': '.BeginTransition'
     'body': '.BeginTransition();'
@@ -10,19 +13,19 @@
     'body': 'Track[\'${1:trackKey}\']${2:}'
   'position':
     'prefix': '.Position'
-    'body': '.Position(${1:x},${2:y});'
+    'body': '.Position(${1:x},${2:y});${3:}'
   'repeater':
     'prefix': 'Repeater'
     'body': 'Repeater[\'${1:repeaterKey}\']${2:}'
   'repeater.begin':
     'prefix': '.Begin'
-    'body': '.Begin(\'${1:trackKey}\',${2:x},${3:y},${4:z},${5:rx},${6:ry},${7:rz},${8:tilt},${9:span},${10:interval},${11:structureKey});'
+    'body': '.Begin(\'${1:trackKey}\',${2:x},${3:y},${4:z},${5:rx},${6:ry},${7:rz},${8:tilt},${9:span},${10:interval},${11:structureKey});${12:}'
   'repeater.begin0':
     'prefix': '.Begin0'
-    'body': '.Begin0(\'${1:trackKey}\',${2:tilt},${3:span},${4:interval},${5:structureKey});'
+    'body': '.Begin0(\'${1:trackKey}\',${2:tilt},${3:span},${4:interval},${5:structureKey});${6:}'
   'structure':
     'prefix': 'Structure'
     'body': 'Structure[\'${1:structureKey}\']${2:}'
   'load':
     'prefix': '.Load'
-    'body': '.Load(\'${1:filePath}\');'
+    'body': '.Load(\'${1:filePath}\');${2:}'
