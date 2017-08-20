@@ -1,31 +1,87 @@
 '.bve-map-2.02':
+  #自軌道の平面曲線
   'curve':
     'prefix': 'curve'
     'body': 'Curve'
-  'setCenter':
-    'prefix': '.SetCenter'
-    'body': '.SetCenter(${1:x});${2:}'
-  'beginTransition':
-    'prefix': '.BeginTransition'
-    'body': '.BeginTransition();'
+    'description': '自軌道の平面曲線を表すマップ要素。'
+    'rightLabelHTML': '<span style="color:#adccff">自軌道の平面曲線</span>'
+
+  #自軌道の勾配
+  'gradient':
+    'prefix': 'gradient'
+    'body': 'Gradient'
+    'description': '自軌道の勾配を表すマップ要素。'
+    'rightLabelHTML': '<span style="color:#ff8484">自軌道の勾配</span>'
+
+  #他軌道
   'track':
     'prefix': 'Track'
     'body': 'Track[\'${1:trackKey}\']${2:}'
+    'description': '他軌道を表すマップ要素。'
+    'rightLabelHTML': '<span style="color:#00a5ff">他軌道</span>'
   'position':
     'prefix': '.Position'
     'body': '.Position(${1:x},${2:y});${3:}'
-  'repeater':
-    'prefix': 'Repeater'
-    'body': 'Repeater[\'${1:repeaterKey}\']${2:}'
-  'repeater.begin':
-    'prefix': '.Begin'
-    'body': '.Begin(\'${1:trackKey}\',${2:x},${3:y},${4:z},${5:rx},${6:ry},${7:rz},${8:tilt},${9:span},${10:interval},${11:structureKey});${12:}'
-  'repeater.begin0':
-    'prefix': '.Begin0'
-    'body': '.Begin0(\'${1:trackKey}\',${2:tilt},${3:span},${4:interval},${5:structureKey});${6:}'
+    'description': '現在の距離程における他軌道の位置を設定する。x: 自軌道からのx座標[m],y: 自軌道からのy座標[m]'
+    'rightLabelHTML': '<span style="color:#00a5ff">他軌道</span>'
+  #ストラクチャ
   'structure':
     'prefix': 'Structure'
     'body': 'Structure[\'${1:structureKey}\']${2:}'
+    'description': 'ストラクチャを表すマップ要素。'
+    'rightLabelHTML': '<span style="color:#26ff60">ストラクチャ</span>'
+  'structure.put':
+    'prefix': '.Put'
+    'body': '.Put(\'${1:trackKey}\',${2:x},${3:y},${4:z},${5:rx},${6:ry},${7:rz},${8:tilt},${9:span});${10:}'
+    'description': 'ストラクチャを設置する。'
+    'rightLabelHTML': '<span style="color:#26ff60">ストラクチャ</span>'
+  'structure.put0':
+    'prefix': '.Put0'
+    'body': '.Put(\'${1:trackKey}\',${2:tilt},${3:span});${4:}'
+    'description': 'ストラクチャを設置する。'
+    'rightLabelHTML': '<span style="color:#26ff60">ストラクチャ</span>'
+  #連続ストラクチャ
+  'repeater':
+    'prefix': 'Repeater'
+    'body': 'Repeater[\'${1:repeaterKey}\']${2:}'
+    'description': '連続ストラクチャを表すマップ要素。'
+    'rightLabelHTML': '<span style="color:#ff0">連続ストラクチャ</span>'
+  'repeater.begin':
+    'prefix': '.Begin'
+    'body': '.Begin(\'${1:trackKey}\',${2:x},${3:y},${4:z},${5:rx},${6:ry},${7:rz},${8:tilt},${9:span},${10:interval},\'${11:structureKey}\');${12:}'
+    'description': 'ストラクチャの連続配置を現在の距離程から開始する。'
+    'rightLabelHTML': '<span style="color:#ff0">連続ストラクチャ</span>'
+  'repeater.begin0':
+    'prefix': '.Begin0'
+    'body': '.Begin0(\'${1:trackKey}\',${2:tilt},${3:span},${4:interval},\'${5:structureKey}\');${6:}'
+    'description': 'ストラクチャの連続配置を現在の距離程から開始する。'
+    'rightLabelHTML': '<span style="color:#ff0">連続ストラクチャ</span>'
+  #停車場
+  #閉塞
+  #地上信号機
+  #地上子
+  #速度制限
+  #先行列車
+  #光源
+  #霧効果
+  #風景描画距離
+  #運転台の明るさ
+  #軌道変位
+  #粘着特性
+  #音
+  #固定音源
+  #走行音
+  #フランジきしり音
+  #分岐器通過音
+  #他列車
+  #数学関数
+  #他マップの挿入
+  #その他
+  'beginTransition':
+    'prefix': '.BeginTransition'
+    'body': '.BeginTransition();'
+    'description': '緩和曲線,縦曲線,カントの逓減の遷移を現在の距離程から開始する。'
   'load':
     'prefix': '.Load'
     'body': '.Load(\'${1:filePath}\');${2:}'
+    'description': 'リストファイルを読み込む。各ファイルのキーを使用する前にこの構文を記述する必要がある。'
