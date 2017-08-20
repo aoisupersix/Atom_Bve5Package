@@ -1,60 +1,118 @@
 '.bve-map-2.02':
   #自軌道の平面曲線
   'curve':
-    'prefix': 'curve'
+    'prefix': 'Curve'
     'body': 'Curve'
-    'description': '自軌道の平面曲線を表すマップ要素。'
+    'description': '自軌道の平面曲線を表すマップ要素です。'
     'rightLabelHTML': '<span style="color:#adccff">自軌道の平面曲線</span>'
+  'curve.setgauge':
+    'prefix': 'SetGauge(value)'
+    'body': 'SetGauge(${1:value});${2:}'
+    'description': '現在の距離程以降の軌間を設定します。この値は、カントを角度に換算するために使用します。'
+    'leftLabelHTML': '<span style="color:#adccff">Curve.</span>'
+    'rightLabelHTML': '<span style="font-size:small;color:#adccff">平面曲線</span>'
+  'curve.setcenter':
+    'prefix': 'SetCenter(x)'
+    'body': 'SetCenter(${1:x});${2:}'
+    'description': '現在の距離程以降のカントの回転中心位置を設定します。'
+    'leftLabelHTML': '<span style="color:#adccff">Curve.</span>'
+    'rightLabelHTML': '<span style="color:#adccff">平面曲線</span>'
+  'curve.setfunction':
+    'prefix': 'SetFunction(id)'
+    'body': 'setFunction(${1:id});${2:}'
+    'description': '現在の距離程以降の緩和曲線関数を設定します。'
+    'leftLabelHTML': '<span style="color:#adccff">Curve.</span>'
+    'rightLabelHTML': '<span style="color:#adccff">平面曲線</span>'
+  'curve.begin1':
+    'prefix': 'Begin(radius,cant)'
+    'body': 'Begin(${1:radius},${2:cant});${3:}'
+    'description': '平面曲線の円曲線を現在の距離程から開始します。'
+    'leftLabelHTML': '<span style="color:#adccff">Curve.</span>'
+    'rightLabelHTML': '<span style="color:#adccff">平面曲線</span>'
+  'curve.begin2':
+    'prefix': 'Begin(radius)'
+    'body': 'Begin(${1:radius});${2:}'
+    'description': '平面曲線の円曲線を現在の距離程から開始します。'
+    'leftLabelHTML': '<span style="color:#adccff">Curve.</span>'
+    'rightLabelHTML': '<span style="color:#adccff">平面曲線</span>'
+  'curve.interpolate1':
+    'prefix': 'Interpolate(radius,cant)'
+    'body': 'Interpolate(${1:radius},${2:cant});${3:}'
+    'description': '現在の距離程における平面曲線の半径とカントを設定します。'
+    'leftLabelHTML': '<span style="color:#adccff">Curve.</span>'
+    'rightLabelHTML': '<span style="color:#adccff">平面曲線</span>'
+  'curve.interpolate2':
+    'prefix': 'Interpolate(radius)'
+    'body': 'Interpolate(${1:radius});${2:}'
+    'description': '現在の距離程における平面曲線の半径とカントを設定します。'
+    'leftLabelHTML': '<span style="color:#adccff">Curve.</span>'
+    'rightLabelHTML': '<span style="color:#adccff">平面曲線</span>'
+  'curve.interpolate2':
+    'prefix': 'Interpolate()'
+    'body': 'Interpolate();${1:}'
+    'description': '現在の距離程における平面曲線の半径とカントを設定します。'
+    'leftLabelHTML': '<span style="color:#adccff">Curve.</span>'
+    'rightLabelHTML': '<span style="color:#adccff">平面曲線</span>'
 
   #自軌道の勾配
   'gradient':
-    'prefix': 'gradient'
+    'prefix': 'Gradient'
     'body': 'Gradient'
-    'description': '自軌道の勾配を表すマップ要素。'
-    'rightLabelHTML': '<span style="color:#ff8484">自軌道の勾配</span>'
+    'description': '自軌道の勾配を表すマップ要素です。'
+    'rightLabelHTML': '<span style="color:#ff8484">勾配</span>'
+  'gradient.begin':
+    'prefix': 'Begin(gradient)'
+    'body': 'Begin(${1:gradient});${2:}'
+    'description': '縦曲線を現在の距離程で終了し、勾配を一定に保ちます。'
+    'leftLabelHTML': '<span style="color:#ff8484">Gradient.</span>'
+    'rightLabelHTML': '<span style="color:#ff8484">勾配</span>'
 
   #他軌道
   'track':
     'prefix': 'Track'
     'body': 'Track[\'${1:trackKey}\']${2:}'
-    'description': '他軌道を表すマップ要素。'
+    'description': '他軌道を表すマップ要素です。'
     'rightLabelHTML': '<span style="color:#00a5ff">他軌道</span>'
   'position':
-    'prefix': '.Position'
-    'body': '.Position(${1:x},${2:y});${3:}'
-    'description': '現在の距離程における他軌道の位置を設定する。x: 自軌道からのx座標[m],y: 自軌道からのy座標[m]'
+    'prefix': 'Position'
+    'body': 'Position(${1:x},${2:y});${3:}'
+    'description': '現在の距離程における他軌道の位置を設定します。x: 自軌道からのx座標[m],y: 自軌道からのy座標[m]'
     'rightLabelHTML': '<span style="color:#00a5ff">他軌道</span>'
+
   #ストラクチャ
   'structure':
     'prefix': 'Structure'
     'body': 'Structure[\'${1:structureKey}\']${2:}'
-    'description': 'ストラクチャを表すマップ要素。'
+    'description': 'ストラクチャを表すマップ要素です。'
     'rightLabelHTML': '<span style="color:#26ff60">ストラクチャ</span>'
   'structure.put':
-    'prefix': '.Put'
-    'body': '.Put(\'${1:trackKey}\',${2:x},${3:y},${4:z},${5:rx},${6:ry},${7:rz},${8:tilt},${9:span});${10:}'
-    'description': 'ストラクチャを設置する。'
+    'prefix': 'Put'
+    'body': 'Put(\'${1:trackKey}\',${2:x},${3:y},${4:z},${5:rx},${6:ry},${7:rz},${8:tilt},${9:span});${10:}'
+    'description': 'ストラクチャを設置します。'
     'rightLabelHTML': '<span style="color:#26ff60">ストラクチャ</span>'
   'structure.put0':
-    'prefix': '.Put0'
-    'body': '.Put(\'${1:trackKey}\',${2:tilt},${3:span});${4:}'
-    'description': 'ストラクチャを設置する。'
+    'prefix': 'Put0'
+    'body': 'Put(\'${1:trackKey}\',${2:tilt},${3:span});${4:}'
+    'description': 'ストラクチャを設置します。'
     'rightLabelHTML': '<span style="color:#26ff60">ストラクチャ</span>'
+
   #連続ストラクチャ
   'repeater':
     'prefix': 'Repeater'
     'body': 'Repeater[\'${1:repeaterKey}\']${2:}'
-    'description': '連続ストラクチャを表すマップ要素。'
+    'description': '連続ストラクチャを表すマップ要素です。'
     'rightLabelHTML': '<span style="color:#ff0">連続ストラクチャ</span>'
   'repeater.begin':
-    'prefix': '.Begin'
-    'body': '.Begin(\'${1:trackKey}\',${2:x},${3:y},${4:z},${5:rx},${6:ry},${7:rz},${8:tilt},${9:span},${10:interval},\'${11:structureKey}\');${12:}'
-    'description': 'ストラクチャの連続配置を現在の距離程から開始する。'
+    'prefix': 'Begin(\'trackKey\',x,y,z,rx,ry,rz,tilt,span,interval)'
+    'body': 'Begin(\'${1:trackKey}\',${2:x},${3:y},${4:z},${5:rx},${6:ry},${7:rz},${8:tilt},${9:span},${10:interval},\'${11:structureKey}\');${12:}'
+    'description': 'ストラクチャの連続配置を現在の距離程から開始します。'
+    'leftLabelHTML': '<span style="color:#ff0">Repeater.</span>'
     'rightLabelHTML': '<span style="color:#ff0">連続ストラクチャ</span>'
   'repeater.begin0':
-    'prefix': '.Begin0'
-    'body': '.Begin0(\'${1:trackKey}\',${2:tilt},${3:span},${4:interval},\'${5:structureKey}\');${6:}'
-    'description': 'ストラクチャの連続配置を現在の距離程から開始する。'
+    'prefix': 'Begin0'
+    'body': 'Begin0(\'${1:trackKey}\',${2:tilt},${3:span},${4:interval},\'${5:structureKey}\');${6:}'
+    'description': 'ストラクチャの連続配置を現在の距離程から開始します。'
+    'leftLabelHTML': '<span style="color:#ff0">Repeater.</span>'
     'rightLabelHTML': '<span style="color:#ff0">連続ストラクチャ</span>'
   #停車場
   #閉塞
@@ -77,11 +135,15 @@
   #数学関数
   #他マップの挿入
   #その他
+  'end':
+    'prefix': 'End'
+    'body': 'End();${1:}'
+    'description': '平面曲線,縦曲線,他軌道のカント,ストラクチャの連続配置,速度制限を現在の距離程から開始します。'
   'beginTransition':
-    'prefix': '.BeginTransition'
-    'body': '.BeginTransition();'
-    'description': '緩和曲線,縦曲線,カントの逓減の遷移を現在の距離程から開始する。'
+    'prefix': 'BeginTransition'
+    'body': 'BeginTransition();'
+    'description': '緩和曲線,縦曲線,カントの逓減の遷移を現在の距離程から開始します。'
   'load':
-    'prefix': '.Load'
-    'body': '.Load(\'${1:filePath}\');${2:}'
-    'description': 'リストファイルを読み込む。各ファイルのキーを使用する前にこの構文を記述する必要がある。'
+    'prefix': 'Load'
+    'body': 'Load(\'${1:filePath}\');${2:}'
+    'description': 'リストファイルを読み込みます。各ファイルのキーを使用する前にこの構文を記述する必要があります。'
