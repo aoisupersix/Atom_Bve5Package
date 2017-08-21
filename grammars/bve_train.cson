@@ -4,7 +4,7 @@
   'patterns': [
     {
       'name': 'header.bve-train'
-      'match': '([B|b]ve[T|t]s\\s*[T|t]rain.*)'
+      'match': '(?i:(BveTs\\s*Train.*))'
       'captures':
           '1':
               'name': 'keyword.other.bve-train'

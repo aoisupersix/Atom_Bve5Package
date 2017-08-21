@@ -4,7 +4,7 @@
   'patterns': [
     {
       'name': 'header.bve-sound'
-      'match': '([B|b]ve[T|t]s\\s*[S|s]ound\\s*[L|l]ist.*)'
+      'match': '(?i:(BveTs\\s*Sound\\s*List.*))'
       'captures':
           '1':
               'name': 'keyword.other.bve-sound'
