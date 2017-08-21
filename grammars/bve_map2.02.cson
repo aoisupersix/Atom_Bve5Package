@@ -34,7 +34,7 @@
     }
     {
       'name': 'repeater.bve-map-2.02'
-      'match': '(Repeater)\\s*\\[\\s*\'(.+)\'\\s*\\]'
+      'match': '(?imx-i)(Repeater)\\s*\\[\\s*\'(.+)\'\\s*\\]'
       'captures':
         '1':
           'name': 'keyword.control.bve-map-2.02'
@@ -86,7 +86,7 @@
     }
     {
       'name': 'curve.setFunction.bve-map-2.02'
-      'match': '\.(SetFunction)\\(\\s*(\\d)\\s*\\);'
+      'match': '(SetFunction)\\(\\s*(\\d)\\s*\\);'
       'captures':
         '1':
           'name': 'entity.name.type.bve-map-2.02'
@@ -157,9 +157,9 @@
       'match': '\.(X)\.(Interpolate)\\((.*)\\);'
       'captures':
         '1':
-          'name': 'entity.type.bve-map-2.02'
+          'name': 'entity.name.type.bve-map-2.02'
         '2':
-          'name': 'entity.type.bve-map-2.02'
+          'name': 'entity.name.type.bve-map-2.02'
         '3':
           'name': 'constant.numeric.bve-map-2.02'
     }
@@ -168,9 +168,9 @@
       'match': '\.(Y)\.(Interpolate)\\((.*)\\);'
       'captures':
         '1':
-          'name': 'entity.type.bve-map-2.02'
+          'name': 'entity.name.type.bve-map-2.02'
         '2':
-          'name': 'entity.type.bve-map-2.02'
+          'name': 'entity.name.type.bve-map-2.02'
         '3':
           'name': 'constant.numeric.bve-map-2.02'
     }
@@ -188,7 +188,7 @@
       'match': '\.(Cant)\.'
       'captures':
         '1':
-          'name': 'entity.type.bve-map-2.02'
+          'name': 'entity.name.type.bve-map-2.02'
     }
     {
       'name': 'structure.load.bve-map-2.02'
@@ -550,7 +550,7 @@
     }
     {
       'name': 'train.stop.bve-map-2.02'
-      'match': '\.(Stop)\\(\'(.*)\'\\);'
+      'match': '\.(Stop)\\s*\\((.*)\\);'
       'captures':
         '1':
           'name': 'entity.name.tag.bve-map-2.02'

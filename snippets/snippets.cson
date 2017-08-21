@@ -19,7 +19,7 @@
     'rightLabelHTML': '<span style="color:#adccff">平面曲線</span>'
   'curve.setfunction':
     'prefix': 'SetFunction(id)'
-    'body': 'setFunction(${1:id});${2:}'
+    'body': 'SetFunction(${1:id});${2:}'
     'description': '現在の距離程以降の緩和曲線関数を設定します。'
     'leftLabelHTML': '<span style="color:#adccff">Curve.</span>'
     'rightLabelHTML': '<span style="color:#adccff">平面曲線</span>'
@@ -153,7 +153,7 @@
     'rightLabelHTML': '<span style="color:#00a5ff">他軌道</span>'
   'track.cant.setfunction':
     'prefix': 'Cant.SetFunction(id)'
-    'body': 'Cant.setFunction(${1:id});${2:}'
+    'body': 'Cant.SetFunction(${1:id});${2:}'
     'description': '現在の距離程以降の他軌道のカント逓減関数を設定します。'
     'leftLabelHTML': '<span style="color:#00a5ff">Track.</span>'
     'rightLabelHTML': '<span style="color:#00a5ff">他軌道</span>'
