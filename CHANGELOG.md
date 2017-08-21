@@ -31,3 +31,6 @@
 ## 1.2.3 - Fine improvement
   Change images in Readme.md
   Update snippets
+## 1.3.0 - Improve grammar and add snippet
+  Improve accuracy of syntax highlighting
+  Add all syntax snippets
