@@ -66,39 +66,167 @@
     'description': '縦曲線を現在の距離程で終了し、勾配を一定に保ちます。'
     'leftLabelHTML': '<span style="color:#ff8484">Gradient.</span>'
     'rightLabelHTML': '<span style="color:#ff8484">勾配</span>'
+  'gradient.interpolate1':
+    'prefix': 'Interpolate(gradient)'
+    'body': 'Interpolate(${1:gradient});${2:}'
+    'description': '現在の距離程に置ける勾配を設定します。2つのInterpolate間は線形補間されます。'
+    'leftLabelHTML': '<span style="color:#ff8484">Gradient.</span>'
+    'rightLabelHTML': '<span style="color:#ff8484">勾配</span>'
+  'gradient.interpolate2':
+    'prefix': 'Interpolate()'
+    'body': 'Interpolate();${1:}'
+    'description': '現在の距離程に置ける勾配を設定します。2つのInterpolate間は線形補間されます。'
+    'leftLabelHTML': '<span style="color:#ff8484">Gradient.</span>'
+    'rightLabelHTML': '<span style="color:#ff8484">勾配</span>'
 
   #他軌道
   'track':
-    'prefix': 'Track'
+    'prefix': 'Track[\'trackKey\']'
     'body': 'Track[\'${1:trackKey}\']${2:}'
     'description': '他軌道を表すマップ要素です。'
     'rightLabelHTML': '<span style="color:#00a5ff">他軌道</span>'
-  'position':
-    'prefix': 'Position'
+  'track.x.interpolate1':
+    'prefix': 'X.Interpolate(x,radius)'
+    'body': 'X.Interpolate(${1:x},${2:radius});${3:}'
+    'description': '現在に距離程における他軌道のx方向位置を設定します。2つのX.Interpolate間は線形補間されます。'
+    'leftLabelHTML': '<span style="color:#00a5ff">Track.</span>'
+    'rightLabelHTML': '<span style="color:#00a5ff">他軌道</span>'
+  'track.x.interpolate2':
+    'prefix': 'X.Interpolate(x)'
+    'body': 'X.Interpolate(${1:x});${2:}'
+    'description': '現在に距離程における他軌道のx方向位置を設定します。2つのX.Interpolate間は線形補間されます。'
+    'leftLabelHTML': '<span style="color:#00a5ff">Track.</span>'
+    'rightLabelHTML': '<span style="color:#00a5ff">他軌道</span>'
+  'track.x.interpolate3':
+    'prefix': 'X.Interpolate()'
+    'body': 'X.Interpolate();${1:}'
+    'description': '現在に距離程における他軌道のx方向位置を設定します。2つのX.Interpolate間は線形補間されます。'
+    'leftLabelHTML': '<span style="color:#00a5ff">Track.</span>'
+    'rightLabelHTML': '<span style="color:#00a5ff">他軌道</span>'
+  'track.y.interpolate1':
+    'prefix': 'Y.Interpolate(y,radius)'
+    'body': 'Y.Interpolate(${1:y},${2:radius});${3:}'
+    'description': '現在に距離程における他軌道のy方向位置を設定します。2つのY.Interpolate間は線形補間されます。'
+    'leftLabelHTML': '<span style="color:#00a5ff">Track.</span>'
+    'rightLabelHTML': '<span style="color:#00a5ff">他軌道</span>'
+  'track.y.interpolate2':
+    'prefix': 'Y.Interpolate(y)'
+    'body': 'Y.Interpolate(${1:y});${2:}'
+    'description': '現在に距離程における他軌道のy方向位置を設定します。2つのY.Interpolate間は線形補間されます。'
+    'leftLabelHTML': '<span style="color:#00a5ff">Track.</span>'
+    'rightLabelHTML': '<span style="color:#00a5ff">他軌道</span>'
+  'track.y.interpolate3':
+    'prefix': 'Y.Interpolate()'
+    'body': 'Y.Interpolate();${1:}'
+    'description': '現在に距離程における他軌道のy方向位置を設定します。2つのY.Interpolate間は線形補間されます。'
+    'leftLabelHTML': '<span style="color:#00a5ff">Track.</span>'
+    'rightLabelHTML': '<span style="color:#00a5ff">他軌道</span>'
+  'track.position1':
+    'prefix': 'Position(x,y,radiusH,radiusV)'
+    'body': 'Position(${1:x},${2:y},${3:radiusH},${4:radiusV});${5:}'
+    'description': '現在の距離程における他軌道の位置を設定します。'
+    'leftLabelHTML': '<span style="color:#00a5ff">Track.</span>'
+    'rightLabelHTML': '<span style="color:#00a5ff">他軌道</span>'
+  'track.position2':
+    'prefix': 'Position(x,y,radiusH)'
+    'body': 'Position(${1:x},${2:y},${3:radiusH});${4:}'
+    'description': '現在の距離程における他軌道の位置を設定します。'
+    'leftLabelHTML': '<span style="color:#00a5ff">Track.</span>'
+    'rightLabelHTML': '<span style="color:#00a5ff">他軌道</span>'
+  'track.position3':
+    'prefix': 'Position(x,y)'
     'body': 'Position(${1:x},${2:y});${3:}'
-    'description': '現在の距離程における他軌道の位置を設定します。x: 自軌道からのx座標[m],y: 自軌道からのy座標[m]'
+    'description': '現在の距離程における他軌道の位置を設定します。'
+    'leftLabelHTML': '<span style="color:#00a5ff">Track.</span>'
+    'rightLabelHTML': '<span style="color:#00a5ff">他軌道</span>'
+  'track.cant.setgauge':
+    'prefix': 'Cant.SetGauge(gauge)'
+    'body': 'Cant.setGauge(${1:gauge});${2:}'
+    'description': '現在の距離程以降の他軌道の軌間を設定します。'
+    'leftLabelHTML': '<span style="color:#00a5ff">Track.</span>'
+    'rightLabelHTML': '<span style="color:#00a5ff">他軌道</span>'
+  'track.cant.setcenter':
+    'prefix': 'Cant.SetCenter(x)'
+    'body': 'Cant.setCenter(${1:x});${2:}'
+    'description': '現在の距離程以降の他軌道のカントの回転中心位置を設定します。'
+    'leftLabelHTML': '<span style="color:#00a5ff">Track.</span>'
+    'rightLabelHTML': '<span style="color:#00a5ff">他軌道</span>'
+  'track.cant.setfunction':
+    'prefix': 'Cant.SetFunction(id)'
+    'body': 'Cant.setFunction(${1:id});${2:}'
+    'description': '現在の距離程以降の他軌道のカント逓減関数を設定します。'
+    'leftLabelHTML': '<span style="color:#00a5ff">Track.</span>'
+    'rightLabelHTML': '<span style="color:#00a5ff">他軌道</span>'
+  'track.cant.begintransition':
+    'prefix': 'Cant.BeginTransition()'
+    'body': 'Cant.BeginTransition();${1:}'
+    'description': '他軌道のカントの逓減を現在の距離程から開始します。'
+    'leftLabelHTML': '<span style="color:#00a5ff">Track.</span>'
+    'rightLabelHTML': '<span style="color:#00a5ff">他軌道</span>'
+  'track.cant.begin':
+    'prefix': 'Cant.Begin(cant)'
+    'body': 'Cant.Begin(${1:cant});${2:}'
+    'description': '他軌道のカントの逓減を現在の距離程で終了し、カントを一定に保ちます。'
+    'leftLabelHTML': '<span style="color:#00a5ff">Track.</span>'
+    'rightLabelHTML': '<span style="color:#00a5ff">他軌道</span>'
+  'track.cant.end':
+    'prefix': 'Cant.End()'
+    'body': 'Cant.Begin();${1:}'
+    'description': '他軌道のカントを現在の距離程で終了します。'
+    'leftLabelHTML': '<span style="color:#00a5ff">Track.</span>'
+    'rightLabelHTML': '<span style="color:#00a5ff">他軌道</span>'
+  'track.cant.interpolate1':
+    'prefix': 'Cant.Interpolate(cant)'
+    'body': 'Cant.Interpolate(${1:cant});${2:}'
+    'description': '現在の距離程における他軌道のカントを設定します。2つのCant.Interpolate間のカントは補完されます。'
+    'leftLabelHTML': '<span style="color:#00a5ff">Track.</span>'
+    'rightLabelHTML': '<span style="color:#00a5ff">他軌道</span>'
+  'track.cant.interpolate2':
+    'prefix': 'Cant.Interpolate()'
+    'body': 'Cant.Interpolate();${1:}'
+    'description': '現在の距離程における他軌道のカントを設定します。2つのCant.Interpolate間のカントは補完されます。'
+    'leftLabelHTML': '<span style="color:#00a5ff">Track.</span>'
     'rightLabelHTML': '<span style="color:#00a5ff">他軌道</span>'
 
   #ストラクチャ
+  'structure.load':
+    'prefix': 'Structure.Load(\'filePath\')'
+    'body': 'Structure.Load(\'${1:filePath}\');${2:}'
+    'description': 'ストラクチャリストファイルに基づいてストラクチャを読み込みます。'
+    'rightLabelHTML': '<span style="color:#26ff60">ストラクチャ</span>'
   'structure':
-    'prefix': 'Structure'
+    'prefix': 'Structure[\'structureKey\']'
     'body': 'Structure[\'${1:structureKey}\']${2:}'
     'description': 'ストラクチャを表すマップ要素です。'
     'rightLabelHTML': '<span style="color:#26ff60">ストラクチャ</span>'
   'structure.put':
-    'prefix': 'Put'
+    'prefix': 'Put(\'trackKey\',x,y,z,rx,ry,rz,tilt,span)'
     'body': 'Put(\'${1:trackKey}\',${2:x},${3:y},${4:z},${5:rx},${6:ry},${7:rz},${8:tilt},${9:span});${10:}'
     'description': 'ストラクチャを設置します。'
+    'leftLabelHTML': '<span style="color:#26ff60">Structure.</span>'
     'rightLabelHTML': '<span style="color:#26ff60">ストラクチャ</span>'
   'structure.put0':
-    'prefix': 'Put0'
+    'prefix': 'Put0(\'trackKey\'tilt,span)'
     'body': 'Put(\'${1:trackKey}\',${2:tilt},${3:span});${4:}'
     'description': 'ストラクチャを設置します。'
+    'leftLabelHTML': '<span style="color:#26ff60">Structure.</span>'
+    'rightLabelHTML': '<span style="color:#26ff60">ストラクチャ</span>'
+  'structure.putbetween1':
+    'prefix': 'PutBetWeen(\'trackKey1\',\'trackKey2\',flag)'
+    'body': 'PutBetWeen(\'${1:trackKey1}\',\'${2:trackKey2}\',${3:flag});${4:}'
+    'description': 'ストラクチャを現在の距離程の2つの軌道の間に設置します。ストラクチャは軌道間の距離に応じて変形します。'
+    'leftLabelHTML': '<span style="color:#26ff60">Structure.</span>'
+    'rightLabelHTML': '<span style="color:#26ff60">ストラクチャ</span>'
+  'structure.putbetween2':
+    'prefix': 'PutBetWeen(\'trackKey1\',\'trackKey2\')'
+    'body': 'PutBetWeen(\'${1:trackKey1}\',\'${2:trackKey2}\');${3:}'
+    'description': 'ストラクチャを現在の距離程の2つの軌道の間に設置します。ストラクチャは軌道間の距離に応じて変形します。'
+    'leftLabelHTML': '<span style="color:#26ff60">Structure.</span>'
     'rightLabelHTML': '<span style="color:#26ff60">ストラクチャ</span>'
 
   #連続ストラクチャ
   'repeater':
-    'prefix': 'Repeater'
+    'prefix': 'Repeater[\'repeaterKey\']'
     'body': 'Repeater[\'${1:repeaterKey}\']${2:}'
     'description': '連続ストラクチャを表すマップ要素です。'
     'rightLabelHTML': '<span style="color:#ff0">連続ストラクチャ</span>'
@@ -109,41 +237,307 @@
     'leftLabelHTML': '<span style="color:#ff0">Repeater.</span>'
     'rightLabelHTML': '<span style="color:#ff0">連続ストラクチャ</span>'
   'repeater.begin0':
-    'prefix': 'Begin0'
+    'prefix': 'Begin0(\'trackKey\',tilt,span,interval)'
     'body': 'Begin0(\'${1:trackKey}\',${2:tilt},${3:span},${4:interval},\'${5:structureKey}\');${6:}'
     'description': 'ストラクチャの連続配置を現在の距離程から開始します。'
     'leftLabelHTML': '<span style="color:#ff0">Repeater.</span>'
     'rightLabelHTML': '<span style="color:#ff0">連続ストラクチャ</span>'
+  'background.change':
+    'prefix': 'Background.Change(structureKey)'
+    'body': 'Background.Change(\'${1:structureKey}\');${2:}'
+    'description': '背景を変更します。'
+    'rightLabelHTML': '<span style="color:#ff0">連続ストラクチャ</span>'
+
   #停車場
+  'station.load':
+    'prefix': 'Station.Load(\'filePath\')'
+    'body': 'Station.Load(\'${1:filePath}\');${2:}'
+    'description': '停車場リストファイルに基づいて停車場を定義します。'
+    'rightLabelHTML': '<span style="color:#ffffff">停車場</span>'
+  'station.put':
+    'prefix': 'Station[\'stationKey\'].Put(door,margin1,margin2)'
+    'body': 'Station[\'${1:stationKey}\'].Put(${2:door},${3:margin1},${4:margin2});${5:}'
+    'description': 'この列車の停止位置を現在の距離程に設定します。'
+    'rightLabelHTML': '<span style="color:#ffffff">停車場</span>'
+
   #閉塞
+  'section':
+    'prefix': 'Section'
+    'body': 'Section'
+    'description': '閉塞を表すマップ要素です。'
+    'rightLabelHTML': '<span style="color:#ffa993">閉塞</span>'
+  'section.begin':
+    'prefix': 'Begin(\'singal0\',\'signal1\',...,\'signalN\')'
+    'body': 'Begin(\'${1:signal0}\',\'${2:signal1}\',\'${3:signal2}\');${4:}'
+    'description': '新しい閉塞を現在の距離程から開始します。'
+    'leftLabelHTML': '<span style="color:#ffa993">Section.</span>'
+    'rightLabelHTML': '<span style="color:#ffa993">閉塞</span>'
+  'section.setspeedlimit':
+    'prefix': 'SetSpeedLimit(v0,v1,...,vN)'
+    'body': 'SetSpeedLimit(${1:v0},${2:v1},${3:v2},${4:v3},${5:v4});${6:}'
+    'description': '信号現示の許容速度を設定します。'
+    'leftLabelHTML': '<span style="color:#ffa993">Section.</span>'
+    'rightLabelHTML': '<span style="color:#ffa993">閉塞</span>'
+
   #地上信号機
+  'signal':
+    'prefix': 'Signal[\'signalAspectKey\']'
+    'body': 'Signal[\'${1:signalAspectKey}\']${2:}'
+    'description': '地上信号機を表すマップ要素です。'
+    'rightLabelHTML': '<span style="color:#ff9d00">地上信号機</span>'
+  'signal.load':
+    'prefix': 'Load(\'filePath\')'
+    'body': 'Load(\'${1:filePath}\');${2:}'
+    'description': '信号現示リストファイルに基づいて信号現示を定義します。'
+    'leftLabelHTML': '<span style="color:#ff9d00">Signal.</span>'
+    'rightLabelHTML': '<span style="color:#ff9d00">地上信号機</span>'
+  'signal.put1':
+    'prefix': 'Put(section,\'trackKey\',x,y)'
+    'body': 'Put(${1:section},\'${2:trackKey}\',${3:x},${4:y});${5:}'
+    'description': '地上信号機を現在の距離程に設置します。'
+    'leftLabelHTML': '<span style="color:#ff9d00">Signal.</span>'
+    'rightLabelHTML': '<span style="color:#ff9d00">地上信号機</span>'
+  'signal.put2':
+    'prefix': 'Put(section,\'trackKey\',x,y,z,rx,ry,rz,tilt,span)'
+    'body': 'Put(${1:section},\'${2:trackKey}\',${3:x},${4:y},${5:z},${6:rx},${7:ry},${8:rz},${9:tilt},${10:span});${11:}'
+    'description': '地上信号機を現在の距離程に設置します。'
+    'leftLabelHTML': '<span style="color:#ff9d00">Signal.</span>'
+    'rightLabelHTML': '<span style="color:#ff9d00">地上信号機</span>'
+
   #地上子
+  'beacon.put':
+    'prefix': 'Beacon.Put(type,section,sendData)'
+    'body': 'Beacon.Put(${1:type},${2:section},${3:sendData});${4:}'
+    'description': '地上子の送信イベントを現在の距離程に定義します。'
+    'rightLabelHTML': '<span style="color:#a0a8ff">地上子</span>'
+
   #速度制限
+  'speedlimit':
+    'prefix': 'SpeedLimit'
+    'body': 'SpeedLimit'
+    'description': '速度制限を表すマップ要素です。'
+    'rightLabelHTML': '<span style="color:#ff21ce">速度制限</span>'
+  'speedlimit.begin':
+    'prefix': 'Begin(v)'
+    'body': 'Begin(${1:v});${2:}'
+    'description': '速度制限を現在の距離程から開始します。'
+    'leftLabelHTML': '<span style="color:#ff21ce">SpeedLimit.</span>'
+    'rightLabelHTML': '<span style="color:#ff21ce">速度制限</span>'
+
   #先行列車
+  'pretrain':
+    'prefix': 'PreTrain'
+    'body': 'PreTrain'
+    'description': '先行列車を表すマップ要素です。'
+    'rightLabelHTML': '<span style="color:#a620ff">先行列車</span>'
+  'pretrain.pass1':
+    'prefix': 'Pass(\'hh:mm:ss\')'
+    'body': 'Pass(\'${1:hh}:${2:mm}:${3:ss}\');${4:}'
+    'description': '先行列車が現在の距離程を通過する時刻を設定します。'
+    'leftLabelHTML': '<span style="color:#a620ff">PreTrain.</span>'
+    'rightLabelHTML': '<span style="color:#a620ff">先行列車</span>'
+  'pretrain.pass2':
+    'prefix': 'Pass(second)'
+    'body': 'Pass(${1:second});${2:}'
+    'description': '先行列車が現在の距離程を通過する時刻を設定します。'
+    'leftLabelHTML': '<span style="color:#a620ff">PreTrain.</span>'
+    'rightLabelHTML': '<span style="color:#a620ff">先行列車</span>'
+
   #光源
+  'light':
+    'prefix': 'Light'
+    'body': 'Light'
+    'description': '光源を表すマップ要素です。'
+    'rightLabelHTML': '<span style="color:#fffd8e">光源</span>'
+  'light.ambient':
+    'prefix': 'Ambient(red,green,blue)'
+    'body': 'Ambient(${1:red},${2:green},${3:blue});${4:}'
+    'description': '環境光の色(アンビエント色)を設定します。この構文はマップファイルに1回のみ記述可能です。'
+    'leftLabelHTML': '<span style="color:#fffd8e">Light.</span>'
+    'rightLabelHTML': '<span style="color:#fffd8e">光源</span>'
+  'light.diffuse':
+    'prefix': 'Diffuse(red,green,blue)'
+    'body': 'Diffuse(${1:red},${2:green},${3:blue});${4:}'
+    'description': '平行光の色(デフューズ色)を設定します。この構文はマップファイルに1回のみ記述可能です。'
+    'leftLabelHTML': '<span style="color:#fffd8e">Light.</span>'
+    'rightLabelHTML': '<span style="color:#fffd8e">光源</span>'
+  'light.direction':
+    'prefix': 'Direction(pitch,yaw)'
+    'body': 'Direction(${1:pitch},${2:yaw});${3:}'
+    'description': '距離程0において、平行光がさす方向を設定します。この構文はマップファイルに1回のみ記述可能です。'
+    'leftLabelHTML': '<span style="color:#fffd8e">Light.</span>'
+    'rightLabelHTML': '<span style="color:#fffd8e">光源</span>'
+
   #霧効果
+  'fog':
+    'prefix': 'Fog'
+    'body': 'Fog'
+    'description': '霧効果を表すマップ要素です。'
+    'rightLabelHTML': '<span style="color:#9f63ff">霧効果</span>'
+  'fog.interpolate1':
+    'prefix': 'Interpolate(density,red,green,blue)'
+    'body': 'Interpolate(${1:density},${2:red},${3:green},${4:blue});${5:}'
+    'description': '現在の距離程における霧効果を設定します。2つのFog.Interpolate間は線形補間されます。'
+    'leftLabelHTML': '<span style="color:#9f63ff">Fog.</span>'
+    'rightLabelHTML': '<span style="color:#9f63ff">霧効果</span>'
+  'fog.interpolate2':
+    'prefix': 'Interpolate(density)'
+    'body': 'Interpolate(${1:density});${2:}'
+    'description': '現在の距離程における霧効果を設定します。2つのFog.Interpolate間は線形補間されます。'
+    'leftLabelHTML': '<span style="color:#9f63ff">Fog.</span>'
+    'rightLabelHTML': '<span style="color:#9f63ff">霧効果</span>'
+  'fog.interpolate3':
+    'prefix': 'Interpolate()'
+    'body': 'Interpolate();${1:}'
+    'description': '現在の距離程における霧効果を設定します。2つのFog.Interpolate間は線形補間されます。'
+    'leftLabelHTML': '<span style="color:#9f63ff">Fog.</span>'
+    'rightLabelHTML': '<span style="color:#9f63ff">霧効果</span>'
+
   #風景描画距離
+  'drawdistance.change':
+    'prefix': 'DrawDistance.Change(value)'
+    'body': 'DrawDistance.Change(${1:value});${2:}'
+    'description': '現在の距離程以降の風景の描画距離を設定します。'
+    'rightLabelHTML': '<span style="color:#ff3af8">風景描画距離</span>'
+
   #運転台の明るさ
+  'cabllluminance':
+    'prefix': 'Cabllluminance'
+    'body': 'Cabllluminance'
+    'description': '運転台の明るさを表すマップ要素です。'
+    'rightLabelHTML': '<span style="color:#fa00ff">運転台の明るさ</span>'
+  'cabllluminance.interpolate1':
+    'prefix': 'Interpolate(value)'
+    'body': 'Interpolate(${1:value});${2:}'
+    'description': '現在の距離程における運転台の明るさを設定します。2つのCabllluminance.Interpolate間は線形補間されます。'
+    'leftLabelHTML': '<span style="color:#fa00ff">Cabllluminance.</span>'
+    'rightLabelHTML': '<span style="color:#fa00ff">運転台の明るさ</span>'
+  'cabllluminance.interpolate2':
+    'prefix': 'Interpolate()'
+    'body': 'Interpolate();${1:}'
+    'description': '現在の距離程における運転台の明るさを設定します。2つのCabllluminance.Interpolate間は線形補間されます。'
+    'leftLabelHTML': '<span style="color:#fa00ff">Cabllluminance.</span>'
+    'rightLabelHTML': '<span style="color:#fa00ff">運転台の明るさ</span>'
+
   #軌道変位
+  'irregularity.change':
+    'prefix': 'Irregularity.Change(x,y,r,lx,ly,lr)'
+    'body': 'Irregularity.Change(${1:x},${2:y},${3:r},${4:lx},${5:ly},${6:lr});${7:}'
+    'description': '現在の距離程以降の軌道変位を設定します。'
+    'rightLabelHTML': '<span style="color:#cecece">軌道変位</span>'
+
   #粘着特性
+  'adhesion':
+    'prefix': 'Adhesion'
+    'body': 'Adhesion'
+    'description': '粘着特性を表すマップ要素です。'
+    'rightLabelHTML': '<span style="color:#68ffdb">粘着特性</span>'
+  'adhesion.change1':
+    'prefix': 'Change(a)'
+    'body': 'Change(${1:a});${2:}'
+    'description': '現在の距離程以降の車輪とレール間の粘着特性を設定します。'
+    'leftLabelHTML': '<span style="color:#68ffdb">Adhesion.</span>'
+    'rightLabelHTML': '<span style="color:#68ffdb">粘着特性</span>'
+  'adhesion.change2':
+    'prefix': 'Change(a,b,c)'
+    'body': 'Change(${1:a},${2:b},${3:c});${4:}'
+    'description': '現在の距離程以降の車輪とレール間の粘着特性を設定します。'
+    'leftLabelHTML': '<span style="color:#68ffdb">Adhesion.</span>'
+    'rightLabelHTML': '<span style="color:#68ffdb">粘着特性</span>'
+
   #音
+  'sound.load':
+    'prefix': 'Sound.Load(\'filePath\')'
+    'body': 'Sound.Load(\'${1:filePath}\');${2:}'
+    'description': 'サウンドリストファイルに基づいてサウンドを読み込みます。'
+    'rightLabelHTML': '<span style="color:#ffc730">音</span>'
+  'sound.play':
+    'prefix': 'Sound[\'soundKey\'].Play()'
+    'body': 'Sound[\'${1:soundKey}\'].Play();${2:}'
+    'description': '現在の距離程を通過するときにサウンドを1回再生します。'
+    'rightLabelHTML': '<span style="color:#ffc730">音</span>'
+
   #固定音源
+  'sound3d.load':
+    'prefix': 'Sound3D.Load(\'filePath\')'
+    'body': 'Sound.Load(\'${1:filePath}\');${2:}'
+    'description': 'サウンドリストファイルに基づいてサウンドを読み込みます。'
+    'rightLabelHTML': '<span style="color:#ff47c1">固定音源</span>'
+  'sound3d.put':
+    'prefix': 'Sound3D[\'soundKey\'].Put(x,y)'
+    'body': 'Sound3D[\'${1:soundKey}\'].Put(${3:x},${4:y});${5:}'
+    'description': '地上に固定された音源を現在の距離程に設置します。サウンドは連続再生されます。'
+    'rightLabelHTML': '<span style="color:#ff47c1">固定音源</span>'
+
   #走行音
+  'rollingnoise.change':
+    'prefix': 'RollingNoise.Change(index)'
+    'body': 'RollingNoise.Change(${1:index});${2:}'
+    'description': '現在の距離程以降の車輪転動音を設定します。'
+    'rightLabelHTML': '<span style="color:#25f2f9">走行音</span>'
+
   #フランジきしり音
+  'flangenoise.change':
+    'prefix': 'FlangeNoise.Change(index)'
+    'body': 'FlangeNoise.Change(${1:index});${2:}'
+    'description': '現在の距離程以降のフランジきしり音を設定します。'
+    'rightLabelHTML': '<span style="color:#25f2f9">フランジきしり音</span>'
+
   #分岐器通過音
+  'jointnoise.play':
+    'prefix': 'JointNoise.Play(index)'
+    'body': 'JointNoise.Play(${1:index});${2:}'
+    'description': '現在の距離程を通過するときに分岐器通過音を走行速度に応じて再生します。'
+    'rightLabelHTML': '<span style="color:#25f2f9">分岐器通過音</span>'
+
   #他列車
-  #数学関数
+  'train':
+    'prefix': 'Train[\'trainKey\']'
+    'body': 'Train[\'trainKey\']'
+    'description': '他列車を表すマップ要素です。'
+    'rightLabelHTML': '<span style="color:#1eff40">他列車</span>'
+  'train.add':
+    'prefix': 'Train.Add(\'trainKey\',filePath,\'trackKey\',direction)'
+    'body': 'Train.Add(\'${1:trainKey}\',${2:filePath},\'${3:trackKey}\',${4:direction});${5:}'
+    'description': '他列車を定義します。'
+    'rightLabelHTML': '<span style="color:#1eff40">他列車</span>'
+  'train.load':
+    'prefix': 'Load(\'filePath\',\'trackKey\',direction)'
+    'body': 'Load(\'${1:filePath}\',\'${2:trackKey}\',${3:direction});${4:}'
+    'description': '他列車を定義します。'
+    'rightLabelHTML': '<span style="color:#1eff40">他列車</span>'
+    'leftLabelHTML': '<span style="color:#1eff40">Train.</span>'
+  'train.enable1':
+    'prefix': 'Enable(\'time\')'
+    'body': 'Enable(\'${1:hh}:${2:mm}:${3:ss}\');${4:}'
+    'description': '他列車が現在の距離程を通過し、かつ設定された時刻になったとき、他列車の動作を有効にします。'
+    'rightLabelHTML': '<span style="color:#1eff40">他列車</span>'
+    'leftLabelHTML': '<span style="color:#1eff40">Train.</span>'
+  'train.enable2':
+    'prefix': 'Enable(second)'
+    'body': 'Enable(${1:second});${2:}'
+    'description': '他列車が現在の距離程を通過し、かつ設定された時刻になったとき、他列車の動作を有効にします。'
+    'rightLabelHTML': '<span style="color:#1eff40">他列車</span>'
+    'leftLabelHTML': '<span style="color:#1eff40">Train.</span>'
+  'train.stop':
+    'prefix': 'Stop(decelerate,stopTime,accelerate,speed)'
+    'body': 'Stop(${1:decelerate},${2:stopTime},${3:accelerate},${4:speed});${5:}'
+    'description': '他列車を現在の距離程に一旦停車させます。'
+    'rightLabelHTML': '<span style="color:#1eff40">他列車</span>'
+    'leftLabelHTML': '<span style="color:#1eff40">Train.</span>'
+
   #他マップの挿入
+  'include':
+    'prefix': 'include \'submap.txt\''
+    'body': 'include \'${1:submap}.txt\';${2:}'
+    'description': '他マップファイルの内容をその位置に挿入します。'
+
   #その他
   'end':
     'prefix': 'End'
     'body': 'End();${1:}'
-    'description': '平面曲線,縦曲線,他軌道のカント,ストラクチャの連続配置,速度制限を現在の距離程から開始します。'
-  'beginTransition':
+    'description': '平面曲線,縦曲線,ストラクチャの連続配置,速度制限を現在の距離程から開始します。'
+  'begintransition':
     'prefix': 'BeginTransition'
     'body': 'BeginTransition();'
-    'description': '緩和曲線,縦曲線,カントの逓減の遷移を現在の距離程から開始します。'
-  'load':
-    'prefix': 'Load'
-    'body': 'Load(\'${1:filePath}\');${2:}'
-    'description': 'リストファイルを読み込みます。各ファイルのキーを使用する前にこの構文を記述する必要があります。'
+    'description': '緩和曲線,縦曲線の遷移を現在の距離程から開始します。'
