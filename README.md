@@ -1,5 +1,6 @@
-# **language-bve5**
-####   BveTrainsim5.7用構文パッケージ in Atom
+language-bve5
+===
+BveTrainsim5.7用構文パッケージ in Atom
 
 ![syntaxhighlighting](https://raw.githubusercontent.com/aoisupersix/Atom_Bve5Package/master/images/syntax.png)
 
