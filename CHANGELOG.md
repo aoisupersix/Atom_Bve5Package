@@ -34,3 +34,6 @@
 ## 1.3.0 - Improve grammar and add snippet
   Improve accuracy of syntax highlighting
   Add all syntax snippets
+## 1.3.1 - Detailed processing change
+  Fixed a bug with different snippet characters
+  Improve grammar automatic judgment processing

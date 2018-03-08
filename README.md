@@ -1,3 +1,5 @@
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](/License.md)
+
 language-bve5
 ===
 BveTrainsim5.7用構文パッケージ in Atom
@@ -8,6 +10,10 @@ BveTrainsim5.7用構文パッケージ in Atom
 
 AtomでBveTrainsim5.7構文のシンタックスハイライト、スニペット挿入、その他制作に役立つ機能をサポートするパッケージです。  
 BveTrainsim5.7以前の構文にも一部対応しています。
+
+## インストール
+
+Atomの設定画面から```language-bve5```と検索してインストールするか、```apm install language-bve5```を実行してください。
 
 ---
 
@@ -28,7 +34,7 @@ BveTrainsim5.7以前の構文にも一部対応しています。
 ## 文法の有効化
 
 文法を有効化することによってパッケージの機能が利用できるようになります。  
-文法の判定は、読み込み/編集/保存時に各ファイルのヘッダから自動で行われますが、コマンドからも実行できます。
+文法の判定は、読み込み/編集時に各ファイルのヘッダから自動で行われますが、コマンドからも実行できます。
 
 ![grammarJudgment](https://raw.githubusercontent.com/aoisupersix/Atom_Bve5Package/master/images/grammarJudgment.gif)
 
@@ -67,5 +73,5 @@ BveTrainsim5の構文を途中まで入力するとスニペットの候補が�
 
 ## サポート
 
-バグの報告や要望はこちらへ。
+バグの報告や要望はIssue、もしくはこちらへ。
 <http://aoisupersix.tokyo/>
