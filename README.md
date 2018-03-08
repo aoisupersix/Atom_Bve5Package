@@ -57,6 +57,14 @@ BveTrainsim5の構文を途中まで入力するとスニペットの候補が�
 
 ---
 
+### ライセンス
+
+>The MIT Lisense (MIT)
+>
+>Copyright (c) 2016 aoisupersix
+
+* **ライセンス全文:** [LICENSE.md](https://github.com/aoisupersix/Atom_Bve5Package/blob/master/LICENSE.md)
+
 ## サポート
 
 バグの報告や要望はこちらへ。
