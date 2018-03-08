@@ -401,22 +401,22 @@
     'rightLabelHTML': '<span style="color:#ff3af8">風景描画距離</span>'
 
   #運転台の明るさ
-  'cabllluminance':
-    'prefix': 'Cabllluminance'
-    'body': 'Cabllluminance'
+  'cabilluminance':
+    'prefix': 'cabIlluminance'
+    'body': 'CabIlluminance'
     'description': '運転台の明るさを表すマップ要素です。'
     'rightLabelHTML': '<span style="color:#fa00ff">運転台の明るさ</span>'
-  'cabllluminance.interpolate1':
+  'cabilluminance.interpolate1':
     'prefix': 'Interpolate(value)'
     'body': 'Interpolate(${1:value});${2:}'
-    'description': '現在の距離程における運転台の明るさを設定します。2つのCabllluminance.Interpolate間は線形補間されます。'
-    'leftLabelHTML': '<span style="color:#fa00ff">Cabllluminance.</span>'
+    'description': '現在の距離程における運転台の明るさを設定します。2つのCabIlluminance.Interpolate間は線形補間されます。'
+    'leftLabelHTML': '<span style="color:#fa00ff">CabIlluminance.</span>'
     'rightLabelHTML': '<span style="color:#fa00ff">運転台の明るさ</span>'
-  'cabllluminance.interpolate2':
+  'cabilluminance.interpolate2':
     'prefix': 'Interpolate()'
     'body': 'Interpolate();${1:}'
-    'description': '現在の距離程における運転台の明るさを設定します。2つのCabllluminance.Interpolate間は線形補間されます。'
-    'leftLabelHTML': '<span style="color:#fa00ff">Cabllluminance.</span>'
+    'description': '現在の距離程における運転台の明るさを設定します。2つのCabIlluminance.Interpolate間は線形補間されます。'
+    'leftLabelHTML': '<span style="color:#fa00ff">CabIlluminance.</span>'
     'rightLabelHTML': '<span style="color:#fa00ff">運転台の明るさ</span>'
 
   #軌道変位
