@@ -190,7 +190,7 @@
 
   #ストラクチャ
   'structure.load':
-    'prefix': 'Structure.Load(\'filePath\')'
+    'prefix': 'Structure.Load(\'StructureFilePath\')'
     'body': 'Structure.Load(\'${1:filePath}\');${2:}'
     'description': 'ストラクチャリストファイルに基づいてストラクチャを読み込みます。'
     'rightLabelHTML': '<span style="color:#26ff60">ストラクチャ</span>'
@@ -250,7 +250,7 @@
 
   #停車場
   'station.load':
-    'prefix': 'Station.Load(\'filePath\')'
+    'prefix': 'Station.Load(\'StationFilePath\')'
     'body': 'Station.Load(\'${1:filePath}\');${2:}'
     'description': '停車場リストファイルに基づいて停車場を定義します。'
     'rightLabelHTML': '<span style="color:#ffffff">停車場</span>'
@@ -286,7 +286,7 @@
     'description': '地上信号機を表すマップ要素です。'
     'rightLabelHTML': '<span style="color:#ff9d00">地上信号機</span>'
   'signal.load':
-    'prefix': 'Load(\'filePath\')'
+    'prefix': 'Load(\'SignalFilePath\')'
     'body': 'Load(\'${1:filePath}\');${2:}'
     'description': '信号現示リストファイルに基づいて信号現示を定義します。'
     'leftLabelHTML': '<span style="color:#ff9d00">Signal.</span>'
@@ -447,7 +447,7 @@
 
   #音
   'sound.load':
-    'prefix': 'Sound.Load(\'filePath\')'
+    'prefix': 'Sound.Load(\'SoundFilePath\')'
     'body': 'Sound.Load(\'${1:filePath}\');${2:}'
     'description': 'サウンドリストファイルに基づいてサウンドを読み込みます。'
     'rightLabelHTML': '<span style="color:#ffc730">音</span>'
@@ -459,7 +459,7 @@
 
   #固定音源
   'sound3d.load':
-    'prefix': 'Sound3D.Load(\'filePath\')'
+    'prefix': 'Sound3D.Load(\'Sound3DFilePath\')'
     'body': 'Sound.Load(\'${1:filePath}\');${2:}'
     'description': 'サウンドリストファイルに基づいてサウンドを読み込みます。'
     'rightLabelHTML': '<span style="color:#ff47c1">固定音源</span>'
