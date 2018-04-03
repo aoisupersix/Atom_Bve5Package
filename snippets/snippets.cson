@@ -47,7 +47,7 @@
     'description': '現在の距離程における平面曲線の半径とカントを設定します。'
     'leftLabelHTML': '<span style="color:#adccff">Curve.</span>'
     'rightLabelHTML': '<span style="color:#adccff">平面曲線</span>'
-  'curve.interpolate2':
+  'curve.interpolate3':
     'prefix': 'Interpolate()'
     'body': 'Interpolate();${1:}'
     'description': '現在の距離程における平面曲線の半径とカントを設定します。'
@@ -207,7 +207,7 @@
     'rightLabelHTML': '<span style="color:#26ff60">ストラクチャ</span>'
   'structure.put0':
     'prefix': 'Put0(\'trackKey\'tilt,span)'
-    'body': 'Put(\'${1:trackKey}\',${2:tilt},${3:span});${4:}'
+    'body': 'Put0(\'${1:trackKey}\',${2:tilt},${3:span});${4:}'
     'description': 'ストラクチャを設置します。'
     'leftLabelHTML': '<span style="color:#26ff60">Structure.</span>'
     'rightLabelHTML': '<span style="color:#26ff60">ストラクチャ</span>'
