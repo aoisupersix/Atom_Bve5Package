@@ -37,3 +37,5 @@
 ## 1.3.1 - Detailed processing change
   Fixed a bug with different snippet characters
   Improve grammar automatic judgment processing
+## 1.3.2 - Bug Fixed
+  Fixed snippet bug.
